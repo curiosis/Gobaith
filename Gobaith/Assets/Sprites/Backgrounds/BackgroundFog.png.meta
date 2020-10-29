@@ -1,0 +1,304 @@
+fileFormatVersion: 2
+guid: 2bc286db48cc0bc4786829b2451ca7d1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3738846709609521374
+    second: BackgroundFog_0
+  - first:
+      213: 2509548072821689523
+    second: BackgroundFog_1
+  - first:
+      213: -9034528460505958658
+    second: BackgroundFog_2
+  - first:
+      213: -8924739357184388433
+    second: BackgroundFog_3
+  - first:
+      213: 6681083783659097790
+    second: BackgroundFog_4
+  - first:
+      213: -5357402564562267229
+    second: BackgroundFog_5
+  - first:
+      213: 8455034274830089770
+    second: BackgroundFog_6
+  - first:
+      213: 7551397769961427624
+    second: BackgroundFog_7
+  - first:
+      213: -1394332132717118015
+    second: BackgroundFog_8
+  - first:
+      213: -7372775974702461192
+    second: BackgroundFog_9
+  - first:
+      213: -7622348362152404123
+    second: BackgroundFog_10
+  - first:
+      213: 9012375086342998497
+    second: BackgroundFog_11
+  - first:
+      213: -4420121108218228738
+    second: BackgroundFog_12
+  - first:
+      213: -5216410418156285151
+    second: BackgroundFog_13
+  - first:
+      213: -596420436641895544
+    second: BackgroundFog_14
+  - first:
+      213: 8588514448814113643
+    second: BackgroundFog_15
+  - first:
+      213: -733814200793952814
+    second: BackgroundFog_16
+  - first:
+      213: -7654242167928491683
+    second: BackgroundFog_17
+  - first:
+      213: -7032247914219377379
+    second: BackgroundFog_18
+  - first:
+      213: -2703218728036248862
+    second: BackgroundFog_19
+  - first:
+      213: -2992171711600853032
+    second: BackgroundFog_20
+  - first:
+      213: 7742158758286139134
+    second: BackgroundFog_21
+  - first:
+      213: 3291288848851439326
+    second: BackgroundFog_22
+  - first:
+      213: 4960794900007205643
+    second: BackgroundFog_23
+  - first:
+      213: -5598442972745630169
+    second: BackgroundFog_24
+  - first:
+      213: -7136316588569559450
+    second: BackgroundFog_25
+  - first:
+      213: 241043336674402457
+    second: BackgroundFog_26
+  - first:
+      213: 2490815875519108745
+    second: BackgroundFog_27
+  - first:
+      213: 833850107424584121
+    second: BackgroundFog_28
+  - first:
+      213: 7852077323336993454
+    second: BackgroundFog_29
+  - first:
+      213: 4994314438228439434
+    second: BackgroundFog_30
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BackgroundFog_0
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 55
+        width: 884
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22f16141ab2fc1cc0800000000000000
+      internalID: -3738846709609521374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackgroundFog_1
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 98
+        width: 558
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bc8d431da4b3d220800000000000000
+      internalID: 2509548072821689523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackgroundFog_2
+      rect:
+        serializedVersion: 2
+        x: 1516
+        y: 115
+        width: 1631
+        height: 501
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef6b26e6b38ee9280800000000000000
+      internalID: -9034528460505958658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackgroundFog_3
+      rect:
+        serializedVersion: 2
+        x: 3172
+        y: 109
+        width: 1815
+        height: 520
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa2931607d4f42480800000000000000
+      internalID: -8924739357184388433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackgroundFog_4
+      rect:
+        serializedVersion: 2
+        x: 4096
+        y: 0
+        width: 1024
+        height: 786
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebe8f97ad4af7bc50800000000000000
+      internalID: 6681083783659097790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
