@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public string actualLevel;
     public float speed, jumpForce, checkRadius;
     private float moveInput;
     private bool isGrounded;
@@ -32,5 +33,11 @@ public class PlayerMovement : MonoBehaviour
         }
             
         Debug.Log(isGrounded);
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "spike")
+            Application.LoadLevel(actualLevel);
     }
 }
