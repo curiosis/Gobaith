@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -11,8 +10,6 @@ public class PlayerMovement : MonoBehaviour
     private bool isGrounded;
     public Transform groundCheck;
     public LayerMask whatIsGround;
-
-    public Animator animator;
 
     private Rigidbody2D rb;
 
@@ -41,9 +38,6 @@ public class PlayerMovement : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "spike")
-        {
-            animator.SetBool("isDead", true);
-            SceneManager.LoadScene(actualLevel);
-        }
+            Application.LoadLevel(actualLevel);
     }
 }
