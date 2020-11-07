@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -27,7 +28,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.W) && isGrounded == true)
+        if ((Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow)) && isGrounded == true)
         {
             rb.velocity = Vector2.up * jumpForce;
         }
@@ -38,6 +39,8 @@ public class PlayerMovement : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "spike")
-            Application.LoadLevel(actualLevel);
+            SceneManager.LoadScene(actualLevel);
+        if (collision.gameObject.CompareTag("Platform"))
+            this.transform.parent = null;
     }
 }
