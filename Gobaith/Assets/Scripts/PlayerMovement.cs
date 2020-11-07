@@ -40,7 +40,20 @@ public class PlayerMovement : MonoBehaviour
     {
         if (collision.tag == "spike")
             SceneManager.LoadScene(actualLevel);
-        if (collision.gameObject.CompareTag("Platform"))
+    }
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("platform")){
+            this.transform.parent = other.transform;
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("platform"))
+        {
             this.transform.parent = null;
+        }
     }
 }
