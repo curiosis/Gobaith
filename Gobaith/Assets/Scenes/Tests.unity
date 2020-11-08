@@ -573,6 +573,10 @@ PrefabInstance:
       propertyPath: activeRestartUI
       value: 
       objectReference: {fileID: 203543367}
+    - target: {fileID: 6303722635117884664, guid: 2994328c87ac7f7478d19cc356a600ec, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1563656544}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2994328c87ac7f7478d19cc356a600ec, type: 3}
 --- !u!1 &1052098029
