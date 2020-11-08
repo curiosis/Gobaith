@@ -43,7 +43,10 @@ public class PlayerMovement : MonoBehaviour
             activeRestartUI.SetActive(true);
             Destroy(player);
         }
-            
+
+        if (collision.tag == "fruit")
+            FruitFollow.trig = true;
+
     }
 
     private void OnCollisionEnter2D(Collision2D other)
