@@ -12,6 +12,8 @@ public class PlayerMovement : MonoBehaviour
     public Transform groundCheck;
     public LayerMask whatIsGround;
 
+    public GameObject activeRestartUI, player;
+
     private Rigidbody2D rb;
 
     private void Start()
@@ -32,14 +34,16 @@ public class PlayerMovement : MonoBehaviour
         {
             rb.velocity = Vector2.up * jumpForce;
         }
-            
-        Debug.Log(isGrounded);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "spike")
-            SceneManager.LoadScene(actualLevel);
+        {
+            activeRestartUI.SetActive(true);
+            Destroy(player);
+        }
+            
     }
 
     private void OnCollisionEnter2D(Collision2D other)
