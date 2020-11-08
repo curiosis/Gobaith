@@ -10,7 +10,11 @@ public class LevelMenag : MonoBehaviour
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.R))
+        {
             SceneManager.LoadScene(restartLevel);
+            FruitFollow.trig = false;
+        }
+            
     }
 
 }
