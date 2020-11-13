@@ -150,7 +150,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2955672779c4824c82d1033d596f435, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  actualLevel: 
+  actualLevel: Tests
   speed: 15
   jumpForce: 20
   checkRadius: 0.5
@@ -158,6 +158,8 @@ MonoBehaviour:
   whatIsGround:
     serializedVersion: 2
     m_Bits: 256
+  activeRestartUI: {fileID: 7931768176438195191, guid: e9061360fe2a4614c887d1645c696202, type: 3}
+  player: {fileID: 6303722635117884659}
 --- !u!61 &-2519061753198258735
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -274,5 +276,6 @@ Light:
   m_UseColorTemperature: 0
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
