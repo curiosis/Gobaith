@@ -1,11 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public string actualLevel;
+    public string nextLevel;
     public float speed, jumpForce, checkRadius;
     private float moveInput;
     private bool isGrounded;
@@ -38,14 +37,18 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "spike")
+        if (collision.CompareTag("spike"))
         {
             activeRestartUI.SetActive(true);
             Destroy(player);
         }
 
-        if (collision.tag == "fruit")
+        if (collision.CompareTag("fruit"))
             FruitFollow.trig = true;
+
+        if (collision.CompareTag("tp"))
+            LevelManager.NextLevel(nextLevel);
+
 
     }
 

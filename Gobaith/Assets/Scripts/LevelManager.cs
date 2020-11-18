@@ -14,7 +14,11 @@ public class LevelManager : MonoBehaviour
             SceneManager.LoadScene(restartLevel);
             FruitFollow.trig = false;
         }
-            
+    }
+
+    public static void NextLevel(string nextLevel)
+    {
+        SceneManager.LoadScene(nextLevel);
     }
 
 }
