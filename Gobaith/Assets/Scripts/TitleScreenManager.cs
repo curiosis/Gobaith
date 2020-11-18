@@ -7,20 +7,31 @@ public class TitleScreenManager : MonoBehaviour
 {
     public string
         startGame,
-        chapters,
         about,
         credits;
 
     public string[] levelList;
+    public GameObject chapterList;
 
     public void StartGame()
     {
         SceneManager.LoadScene(startGame);
     }
 
-    public void Chapter()
+    public void ShowChapters()
     {
-        SceneManager.LoadScene(chapters);
+        if (chapterList.activeSelf == false)
+            chapterList.SetActive(true);
+        else
+            chapterList.SetActive(false);
+    }
+
+    public void Chapter1(){
+        SceneManager.LoadScene(levelList[0]);
+    }
+
+    public void Chapter2(){
+        SceneManager.LoadScene(levelList[1]);
     }
 
     public void Quit()
