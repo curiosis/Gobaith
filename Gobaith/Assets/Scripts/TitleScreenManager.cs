@@ -8,7 +8,8 @@ public class TitleScreenManager : MonoBehaviour
     public string
         startGame,
         about,
-        credits;
+        credits,
+        test;
 
     public string[] levelList;
     public GameObject chapterList;
@@ -32,6 +33,11 @@ public class TitleScreenManager : MonoBehaviour
 
     public void Chapter2(){
         SceneManager.LoadScene(levelList[1]);
+    }
+
+    public void Tests()
+    {
+        SceneManager.LoadScene(test);
     }
 
     public void Quit()
