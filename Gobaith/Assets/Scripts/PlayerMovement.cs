@@ -44,8 +44,8 @@ public class PlayerMovement : MonoBehaviour
         if (collision.CompareTag("spike"))
         {
             activeRestartUI.SetActive(true);
-            SoundManager.PlaySound("Dead");
             Destroy(player);
+            SoundManager.PlaySound("Dead");
         }
 
         if (collision.CompareTag("fruit"))
