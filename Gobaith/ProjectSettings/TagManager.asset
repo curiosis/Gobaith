@@ -8,6 +8,7 @@ TagManager:
   - platform
   - fruit
   - tp
+  - turnEnemy
   layers:
   - Default
   - TransparentFX
