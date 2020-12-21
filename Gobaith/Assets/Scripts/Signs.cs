@@ -6,24 +6,40 @@ public class Signs : MonoBehaviour
 {
     public Transform player;
     public float agroRange;
+    public GameObject popUpInfoGO;
+    public Animator animator;
 
     public string popUpText;
-
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
     {
         float distance = Vector2.Distance(transform.position, player.position);
-        
-        if(Input.GetKeyDown(KeyCode.Space) && distance < agroRange)
+        if(distance < agroRange)
         {
-            PopUpSystem pop = GameObject.FindGameObjectWithTag("LevelManager").GetComponent<PopUpSystem>();
-            pop.PopUp(popUpText);
+            PopUpInfo();
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                PopUpSystem pop = GameObject.FindGameObjectWithTag("LevelManager").GetComponent<PopUpSystem>();
+                pop.PopUp(popUpText);
+            }
         }
+        else
+        {
+            closePopUpInfo();
+        }
+        
 
+    }
+
+    public void PopUpInfo()
+    {
+        popUpInfoGO.SetActive(true);
+        animator.SetBool("Info", true);
+    }
+
+    public void closePopUpInfo()
+    {
+        animator.SetBool("Info", false);
     }
 }
