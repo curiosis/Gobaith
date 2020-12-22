@@ -1,19 +1,13 @@
 fileFormatVersion: 2
-guid: 7e9a15f66c3b84d4e8135e081ac6c0ba
+guid: 563fdfa0a62732b46b4590270ac9ef92
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7235917218687701674
-    second: imgbin-dissidia-final-fantasy-final-fantasy-crystal-chronicles-final-fantasy-v-video-game-others-7BNSgwydtdp89TGW7HY4mweFj_0
+      213: 6723963429988506304
+    second: Spikes_0
   - first:
-      213: 4579724072370885265
-    second: imgbin-dissidia-final-fantasy-final-fantasy-crystal-chronicles-final-fantasy-v-video-game-others-7BNSgwydtdp89TGW7HY4mweFj_1
-  - first:
-      213: 2653343194939819575
-    second: imgbin-dissidia-final-fantasy-final-fantasy-crystal-chronicles-final-fantasy-v-video-game-others-7BNSgwydtdp89TGW7HY4mweFj_2
-  - first:
-      213: -3341233965210399888
-    second: imgbin-dissidia-final-fantasy-final-fantasy-crystal-chronicles-final-fantasy-v-video-game-others-7BNSgwydtdp89TGW7HY4mweFj_3
+      213: -7010832575621253078
+    second: Spikes_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -67,6 +61,8 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
@@ -101,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: imgbin-dissidia-final-fantasy-final-fantasy-crystal-chronicles-final-fantasy-v-video-game-others-7BNSgwydtdp89TGW7HY4mweFj_0
+      name: Spikes_0
       rect:
         serializedVersion: 2
-        x: 24
-        y: 26
-        width: 122
-        height: 285
+        x: 28
+        y: 15
+        width: 64
+        height: 239
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,20 +111,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aa253047f542b6460800000000000000
-      internalID: 7235917218687701674
+      spriteID: 0ca9e2f4d11505d50800000000000000
+      internalID: 6723963429988506304
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: imgbin-dissidia-final-fantasy-final-fantasy-crystal-chronicles-final-fantasy-v-video-game-others-7BNSgwydtdp89TGW7HY4mweFj_1
+      name: Spikes_1
       rect:
         serializedVersion: 2
-        x: 160
-        y: 27
-        width: 121
-        height: 285
+        x: 107
+        y: 14
+        width: 282
+        height: 246
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -136,50 +132,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 192d8f687c27e8f30800000000000000
-      internalID: 4579724072370885265
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: imgbin-dissidia-final-fantasy-final-fantasy-crystal-chronicles-final-fantasy-v-video-game-others-7BNSgwydtdp89TGW7HY4mweFj_2
-      rect:
-        serializedVersion: 2
-        x: 295
-        y: 26
-        width: 122
-        height: 285
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7368699e39192d420800000000000000
-      internalID: 2653343194939819575
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: imgbin-dissidia-final-fantasy-final-fantasy-crystal-chronicles-final-fantasy-v-video-game-others-7BNSgwydtdp89TGW7HY4mweFj_3
-      rect:
-        serializedVersion: 2
-        x: 430
-        y: 27
-        width: 122
-        height: 285
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 07b0a28496d81a1d0800000000000000
-      internalID: -3341233965210399888
+      spriteID: a28bb5edae484be90800000000000000
+      internalID: -7010832575621253078
       vertices: []
       indices: 
       edges: []

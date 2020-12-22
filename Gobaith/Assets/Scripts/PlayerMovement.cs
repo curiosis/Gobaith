@@ -7,9 +7,10 @@ public class PlayerMovement : MonoBehaviour
     public string nextLevel;
     public float speed, jumpForce, checkRadius;
     private float moveInput;
-    private bool isGrounded;
+    private bool isGrounded, facingRight = true;
     public Transform groundCheck;
     public LayerMask whatIsGround;
+    public Animator animator;
 
     public GameObject activeRestartUI, player;
 
@@ -25,6 +26,9 @@ public class PlayerMovement : MonoBehaviour
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, whatIsGround);
         moveInput = Input.GetAxis("Horizontal");
         rb.velocity = new Vector2(moveInput * speed, rb.velocity.y);
+
+        if ((facingRight == false && moveInput > 0) || (facingRight == true && moveInput < 0))
+            Flip();
     }
 
     private void Update()
@@ -41,6 +45,7 @@ public class PlayerMovement : MonoBehaviour
         {
             activeRestartUI.SetActive(true);
             Destroy(player);
+            SoundManager.PlaySound("Dead");
         }
 
         if (collision.CompareTag("fruit"))
@@ -65,5 +70,13 @@ public class PlayerMovement : MonoBehaviour
         {
             this.transform.parent = null;
         }
+    }
+
+    void Flip()
+    {
+        facingRight = !facingRight;
+        Vector3 scaler = transform.localScale;
+        scaler.x *= -1;
+        transform.localScale = scaler;
     }
 }
