@@ -1041,10 +1041,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 6303722635946273138}
-  agroRange: 3
+  agroRange: 2
   popUpInfoGO: {fileID: 1915100825}
   animator: {fileID: 1915100826}
-  popUpText: "Dzia\u0142a"
+  popUpText: xyz
 --- !u!212 &482447974
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6241,6 +6241,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   popUpBox: {fileID: 411990108}
+  popUpInfoGO: {fileID: 0}
   animator: {fileID: 411990110}
   popUpText: {fileID: 1352474990}
 --- !u!1 &1179955401

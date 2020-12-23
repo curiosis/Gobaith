@@ -5,7 +5,7 @@ using TMPro;
 
 public class PopUpSystem : MonoBehaviour
 {
-    public GameObject popUpBox;
+    public GameObject popUpBox, popUpInfoGO;
     public Animator animator;
     public TMP_Text popUpText;
 
@@ -20,4 +20,6 @@ public class PopUpSystem : MonoBehaviour
     {
         animator.SetBool("Pop", false);
     }
+
+
 }
