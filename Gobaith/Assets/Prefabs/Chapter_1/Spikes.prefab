@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6248814403588135845}
   - component: {fileID: 6248814403588135850}
   m_Layer: 8
-  m_Name: New Sprite (2)
+  m_Name: Spikes
   m_TagString: spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -51,7 +51,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
