@@ -15,17 +15,18 @@ public class Signs : MonoBehaviour
     void Update()
     {
         float distance = Vector2.Distance(transform.position, player.position);
-        if(distance < agroRange)
+        PopUpSystem pop = GameObject.FindGameObjectWithTag("LevelManager").GetComponent<PopUpSystem>();
+        if (distance < agroRange)
         {
             PopUpInfo();
             if (Input.GetKeyDown(KeyCode.Space))
             {
-                PopUpSystem pop = GameObject.FindGameObjectWithTag("LevelManager").GetComponent<PopUpSystem>();
                 pop.PopUp(popUpText);
             }
         }
         else
         {
+            pop.closePopUP();
             closePopUpInfo();
         }
         
