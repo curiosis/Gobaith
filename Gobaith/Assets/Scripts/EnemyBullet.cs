@@ -9,10 +9,14 @@ public class EnemyBullet : MonoBehaviour
     public bool horizontal;
     public GameObject bulletEffect;
 
+    public float startDestroyTimer;
+    private float destroyTimer;
+
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        destroyTimer = startDestroyTimer;
     }
 
     // Update is called once per frame
@@ -22,6 +26,11 @@ public class EnemyBullet : MonoBehaviour
             rb.velocity = new Vector2(speed * transform.localScale.x, 0);
         else if(!horizontal)
             rb.velocity = new Vector2(0, speed * transform.localScale.y);
+
+        if (destroyTimer <= 0)
+            Destroy(gameObject);
+        else
+            destroyTimer -= Time.deltaTime;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
