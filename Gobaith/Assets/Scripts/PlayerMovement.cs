@@ -39,7 +39,11 @@ public class PlayerMovement : MonoBehaviour
     {
         if (movement)
             if ((Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow)) && isGrounded == true)
+            {
+                SoundManager.PlaySound("Jump");
                 rb.velocity = Vector2.up * jumpForce;
+            }
+                
         
     }
 
