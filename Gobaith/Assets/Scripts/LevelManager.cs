@@ -18,6 +18,8 @@ public class LevelManager : MonoBehaviour
 
     public static void NextLevel(string nextLevel)
     {
+        if (FruitFollow.trig)
+            Debug.Log("Zebrany");
         SceneManager.LoadScene(nextLevel);
     }
 
