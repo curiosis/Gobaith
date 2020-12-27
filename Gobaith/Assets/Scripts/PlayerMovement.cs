@@ -7,7 +7,7 @@ public class PlayerMovement : MonoBehaviour
     public string nextLevel;
     public float speed, jumpForce, checkRadius;
     private float moveInput;
-    private bool isGrounded, facingRight = true, movement=true;
+    private bool isGrounded, facingRight = true, movement;
     public Transform groundCheck;
     public LayerMask whatIsGround;
     public Animator animator;
@@ -18,6 +18,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Start()
     {
+        movement = true;
         rb = GetComponent<Rigidbody2D>();
     }
 
