@@ -27,6 +27,7 @@ public class LevelLoader : MonoBehaviour
     IEnumerator LoadLevel(int levelIndex)
     {
         animator.SetTrigger("Start");
+        SoundManager.PlaySound("TranEffect");
         yield return new WaitForSeconds(transitionTime);
         animator.SetTrigger("End");
         SceneManager.LoadScene(levelIndex);

@@ -5,13 +5,14 @@ using UnityEngine;
 public class SoundManager : MonoBehaviour
 {
 
-    public static AudioClip dead;
-    static AudioSource audioSource;
+    public static AudioClip dead, tran;
+    public static AudioSource audioSource;
 
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
         dead = Resources.Load<AudioClip>("DeadEffect");
+        tran = Resources.Load<AudioClip>("transitionSoundEffect");
     }
 
     public static void PlaySound(string clip)
@@ -21,6 +22,10 @@ public class SoundManager : MonoBehaviour
             case "Dead":
                 audioSource.PlayOneShot(dead);
                 break;
+            case "TranEffect":
+                audioSource.PlayOneShot(tran);
+                break;
+
         }
     }
 }
