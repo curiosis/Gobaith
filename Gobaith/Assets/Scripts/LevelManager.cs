@@ -15,12 +15,4 @@ public class LevelManager : MonoBehaviour
             FruitFollow.trig = false;
         }
     }
-
-    public static void NextLevel(string nextLevel)
-    {
-        if (FruitFollow.trig)
-            Debug.Log("Zebrany");
-        SceneManager.LoadScene(nextLevel);
-    }
-
 }

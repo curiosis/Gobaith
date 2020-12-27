@@ -7,7 +7,7 @@ public class PlayerMovement : MonoBehaviour
     public string nextLevel;
     public float speed, jumpForce, checkRadius;
     private float moveInput;
-    private bool isGrounded, facingRight = true;
+    private bool isGrounded, facingRight = true, movement=true;
     public Transform groundCheck;
     public LayerMask whatIsGround;
     public Animator animator;
@@ -23,20 +23,24 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        isGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, whatIsGround);
-        moveInput = Input.GetAxis("Horizontal");
-        rb.velocity = new Vector2(moveInput * speed, rb.velocity.y);
+        if (movement)
+        {
+            isGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, whatIsGround);
+            moveInput = Input.GetAxis("Horizontal");
+            rb.velocity = new Vector2(moveInput * speed, rb.velocity.y);
 
-        if ((facingRight == false && moveInput > 0) || (facingRight == true && moveInput < 0))
-            Flip();
+            if ((facingRight == false && moveInput > 0) || (facingRight == true && moveInput < 0))
+                Flip();
+        }
+        
     }
 
     private void Update()
     {
-        if ((Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow)) && isGrounded == true)
-        {
-            rb.velocity = Vector2.up * jumpForce;
-        }
+        if (movement)
+            if ((Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow)) && isGrounded == true)
+                rb.velocity = Vector2.up * jumpForce;
+        
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -52,7 +56,11 @@ public class PlayerMovement : MonoBehaviour
             FruitFollow.trig = true;
 
         if (collision.CompareTag("tp"))
-            LevelManager.NextLevel(nextLevel);
+        {
+            movement = false;
+            LevelLoader.nextLevel = true;
+        }
+            
 
 
     }
