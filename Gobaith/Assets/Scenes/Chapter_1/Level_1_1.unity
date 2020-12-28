@@ -38839,6 +38839,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1891922105}
     m_Modifications:
+    - target: {fileID: 7356906590120303922, guid: 86f1decf69ae2cf479e68ea002a3f9d3, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7356906590120303922, guid: 86f1decf69ae2cf479e68ea002a3f9d3, type: 3}
+      propertyPath: m_RenderMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7356906590120303922, guid: 86f1decf69ae2cf479e68ea002a3f9d3, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7356906590120303923, guid: 86f1decf69ae2cf479e68ea002a3f9d3, type: 3}
       propertyPath: m_Name
       value: Bee
@@ -38886,6 +38898,50 @@ PrefabInstance:
     - target: {fileID: 7356906590120303924, guid: 86f1decf69ae2cf479e68ea002a3f9d3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7356906590120303925, guid: 86f1decf69ae2cf479e68ea002a3f9d3, type: 3}
+      propertyPath: LightsModule.color
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7356906590120303925, guid: 86f1decf69ae2cf479e68ea002a3f9d3, type: 3}
+      propertyPath: LightsModule.light
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7356906590120303925, guid: 86f1decf69ae2cf479e68ea002a3f9d3, type: 3}
+      propertyPath: LightsModule.range
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7356906590120303925, guid: 86f1decf69ae2cf479e68ea002a3f9d3, type: 3}
+      propertyPath: LightsModule.ratio
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7356906590120303925, guid: 86f1decf69ae2cf479e68ea002a3f9d3, type: 3}
+      propertyPath: TrailModule.enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7356906590120303925, guid: 86f1decf69ae2cf479e68ea002a3f9d3, type: 3}
+      propertyPath: LightsModule.enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7356906590120303925, guid: 86f1decf69ae2cf479e68ea002a3f9d3, type: 3}
+      propertyPath: LightsModule.intensity
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7356906590120303925, guid: 86f1decf69ae2cf479e68ea002a3f9d3, type: 3}
+      propertyPath: LightsModule.maxLights
+      value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 7356906590120303925, guid: 86f1decf69ae2cf479e68ea002a3f9d3, type: 3}
+      propertyPath: LightsModule.rangeCurve.scalar
+      value: 10.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 7356906590120303925, guid: 86f1decf69ae2cf479e68ea002a3f9d3, type: 3}
+      propertyPath: LightsModule.randomDistribution
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7356906590120303925, guid: 86f1decf69ae2cf479e68ea002a3f9d3, type: 3}
+      propertyPath: LightsModule.intensityCurve.scalar
+      value: 8.6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 86f1decf69ae2cf479e68ea002a3f9d3, type: 3}
