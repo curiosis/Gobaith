@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -12,12 +13,17 @@ public class PlayerMovement : MonoBehaviour
     public LayerMask whatIsGround;
     public Animator animator;
 
+    public Text deadValue;
+    public Text deadValueAll;
+
     public GameObject activeRestartUI, player;
 
     private Rigidbody2D rb;
 
     private void Start()
     {
+        deadValue.text = PlayerPrefs.GetInt("deadVal").ToString();
+        deadValueAll.text = PlayerPrefs.GetInt("deadValAll").ToString();
         movement = true;
         rb = GetComponent<Rigidbody2D>();
     }
@@ -53,6 +59,18 @@ public class PlayerMovement : MonoBehaviour
         if (collision.CompareTag("spike"))
         {
             activeRestartUI.SetActive(true);
+
+            int d = PlayerPrefs.GetInt("deadVal");
+            d++;
+            PlayerPrefs.SetInt("deadVal", d);
+            deadValue.text = PlayerPrefs.GetInt("deadVal").ToString();
+
+            int dAll = PlayerPrefs.GetInt("deadValAll");
+            dAll++;
+            PlayerPrefs.SetInt("deadValAll", dAll);
+            deadValueAll.text = PlayerPrefs.GetInt("deadValAll").ToString();
+
+
             Destroy(player);
             SoundManager.PlaySound("Dead");
         }
