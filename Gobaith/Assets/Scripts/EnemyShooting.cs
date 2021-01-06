@@ -25,4 +25,9 @@ public class EnemyShooting : MonoBehaviour
         else
             timeBtwShots -= Time.deltaTime;
     }
+
+    public float getRot()
+    {
+        return transform.rotation.eulerAngles.z;
+    }
 }

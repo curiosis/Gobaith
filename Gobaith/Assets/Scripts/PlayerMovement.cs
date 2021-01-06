@@ -63,6 +63,7 @@ public class PlayerMovement : MonoBehaviour
         if (collision.CompareTag("tp"))
         {
             movement = false;
+            Debug.Log(LevelTimer.time);
             LevelLoader.nextLevel = true;
         }
             

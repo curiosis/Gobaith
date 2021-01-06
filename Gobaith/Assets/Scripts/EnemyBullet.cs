@@ -17,6 +17,7 @@ public class EnemyBullet : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         destroyTimer = startDestroyTimer;
+        Debug.Log(rb.velocity);
     }
 
     // Update is called once per frame
