@@ -17,6 +17,7 @@ public class TitleScreenManager : MonoBehaviour
     public void StartGame()
     {
         PlayerPrefs.SetInt("deadVal", 0);
+        PlayerPrefs.SetInt("res", 0);
         SceneManager.LoadScene(startGame);
     }
 

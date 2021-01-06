@@ -82,6 +82,10 @@ public class PlayerMovement : MonoBehaviour
         {
             movement = false;
             Debug.Log(LevelTimer.time);
+
+            Score.count = true;
+
+            PlayerPrefs.SetInt("deadVal", 0);
             LevelLoader.nextLevel = true;
         }
             
