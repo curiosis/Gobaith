@@ -87,7 +87,13 @@ public class PlayerMovement : MonoBehaviour
         }
 
         if (collision.CompareTag("fruit"))
+        {
+            int a = PlayerPrefs.GetInt("apple");
+            a++;
+            PlayerPrefs.SetInt("apple", a);
             FruitFollow.trig = true;
+        }
+            
 
         if (collision.CompareTag("tp"))
         {

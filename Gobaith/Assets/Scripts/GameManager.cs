@@ -6,6 +6,7 @@ public class GameManager : MonoBehaviour
 {
 
     public static string[] levelNames = new string[10];
+    public static int[] apples = new int[10];
 
     private void Start()
     {
@@ -15,5 +16,6 @@ public class GameManager : MonoBehaviour
         levelNames[3] = "Mountain of revelation";
         levelNames[4] = "Cave de Bélly [Ithali Forest]";
 
+        apples[0] = 1;
     }
 }
