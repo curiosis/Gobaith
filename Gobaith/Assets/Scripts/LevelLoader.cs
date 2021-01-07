@@ -37,17 +37,23 @@ public class LevelLoader : MonoBehaviour
         float t = LevelTimer.time;
         animator.SetTrigger("Start");
         SoundManager.PlaySound("TranEffect");
+
+        level.text = GameManager.levelNames[SceneManager.GetActiveScene().buildIndex - 1];
         points.text = Score.res.ToString();
         deathsVal.text = PlayerPrefs.GetInt("deadVal").ToString();
         timer.text = t.ToString("0.0");
+
+
         yield return new WaitForSeconds(transitionTime);
         if (Input.GetKeyDown(KeyCode.Space))
         {
             animator.SetTrigger("End");
             PlayerPrefs.SetInt("deadVal", 0);
-            SceneManager.LoadScene(levelIndex);
             LevelTimer.time = 0;
             LevelTimer.timing = true;
+            nextLevel = false;
+            SceneManager.LoadScene(levelIndex);
+            
         }
     }
 }

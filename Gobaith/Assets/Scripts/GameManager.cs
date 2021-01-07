@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
+    public static string[] levelNames = new string[10];
+
+    private void Start()
     {
-        
+        levelNames[0] = "Thickets [Ithali Forest]";
+        levelNames[1] = "Spiky gorge [Ithali Forest]";
+        levelNames[2] = "Pedestal [Ithali Forest]";
+        levelNames[3] = "Mountain of revelation";
+        levelNames[4] = "Cave de Bélly [Ithali Forest]";
+
     }
 }

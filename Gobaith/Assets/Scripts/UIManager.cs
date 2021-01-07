@@ -15,11 +15,19 @@ public class UIManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.Log(LevelLoader.nextLevel);
+
         if (LevelLoader.nextLevel)
         {
             time.text = "";
             dead.text = "";
             deadAll.text = "";
+        }
+        if(!LevelLoader.nextLevel)
+        {
+            time.text = "Time: ";
+            dead.text = "Deaths: ";
+            deadAll.text = "All deaths: ";
         }
     }
 }
