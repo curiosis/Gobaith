@@ -5,6 +5,7 @@ using UnityEngine;
 public class Score : MonoBehaviour
 {
     public static bool count = false;
+    public static int res;
 
     // Start is called before the first frame update
     void Start()
@@ -21,9 +22,9 @@ public class Score : MonoBehaviour
         }
     }
 
-    void Counting()
+    public void Counting()
     {
-        int res = 1000 * 1 - (10 * (10 * PlayerPrefs.GetInt("deadVal") + (int)LevelTimer.time * 1));
+        res = 1000 * 1 - (10 * (10 * PlayerPrefs.GetInt("deadVal") + (int)LevelTimer.time * 1));
         if (res < 0)
             res = 0;
 

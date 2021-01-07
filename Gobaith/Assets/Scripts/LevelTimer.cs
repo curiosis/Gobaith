@@ -7,6 +7,7 @@ public class LevelTimer : MonoBehaviour
 {
     public static float time = 0;
     public Text timeText;
+    public static bool timing = true;
 
     void Start()
     {
@@ -16,7 +17,11 @@ public class LevelTimer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        time += Time.deltaTime;
-        timeText.text = time.ToString("0.0");
+        if (timing)
+        {
+            time += Time.deltaTime;
+            timeText.text = time.ToString("0.0");
+        }
+        
     }
 }
