@@ -18,10 +18,11 @@ public class LevelTimer : MonoBehaviour
     void Update()
     {
         if (timing)
-        {
             time += Time.deltaTime;
+        if (!LevelLoader.nextLevel)
             timeText.text = time.ToString("0.0");
-        }
-        
+        else
+            timeText.text = "";
+
     }
 }

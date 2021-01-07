@@ -31,6 +31,7 @@ public class LevelLoader : MonoBehaviour
 
     IEnumerator LoadLevel(int levelIndex)
     {
+
         LevelTimer.timing = false;
 
         float t = LevelTimer.time;

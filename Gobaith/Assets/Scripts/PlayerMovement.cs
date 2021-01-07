@@ -50,6 +50,17 @@ public class PlayerMovement : MonoBehaviour
                 SoundManager.PlaySound("Jump");
                 rb.velocity = Vector2.up * jumpForce;
             }
+
+        if (!LevelLoader.nextLevel)
+        {
+            deadValue.text = PlayerPrefs.GetInt("deadVal").ToString();
+            deadValueAll.text = PlayerPrefs.GetInt("deadValAll").ToString();
+        }
+        else
+        {
+            deadValue.text = "";
+            deadValueAll.text = "";
+        }
                 
         
     }
