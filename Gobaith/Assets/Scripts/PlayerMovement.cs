@@ -8,9 +8,9 @@ public class PlayerMovement : MonoBehaviour
     public string nextLevel;
     public float speed, jumpForce, checkRadius;
     private float moveInput;
-    private bool isGrounded, facingRight = true, movement;
+    private bool isGrounded, facingRight = true, movement, isSanded;
     public Transform groundCheck;
-    public LayerMask whatIsGround;
+    public LayerMask whatIsGround, sand;
     public Animator animator;
 
     public Text deadValue;
@@ -33,11 +33,15 @@ public class PlayerMovement : MonoBehaviour
         if (movement)
         {
             isGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, whatIsGround);
+            isSanded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, sand);
             moveInput = Input.GetAxis("Horizontal");
             rb.velocity = new Vector2(moveInput * speed, rb.velocity.y);
 
             if ((facingRight == false && moveInput > 0) || (facingRight == true && moveInput < 0))
                 Flip();
+
+            if(isSanded)
+                rb.velocity = Vector2.up * -speed/30;
         }
         
     }
@@ -45,7 +49,7 @@ public class PlayerMovement : MonoBehaviour
     private void Update()
     {
         if (movement)
-            if ((Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow)) && isGrounded == true)
+            if (((Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow)) && isGrounded == true) && !isSanded)
             {
                 SoundManager.PlaySound("Jump");
                 rb.velocity = Vector2.up * jumpForce;
