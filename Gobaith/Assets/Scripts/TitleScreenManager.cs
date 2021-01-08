@@ -18,6 +18,7 @@ public class TitleScreenManager : MonoBehaviour
     {
         PlayerPrefs.SetInt("deadVal", 0);
         PlayerPrefs.SetInt("res", 0);
+        PlayerPrefs.SetInt("apple", 0);
         SceneManager.LoadScene(startGame);
     }
 
