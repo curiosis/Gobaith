@@ -25,7 +25,7 @@ public class Score : MonoBehaviour
 
     public void Counting()
     {
-        res = 1000 * SceneManager.GetActiveScene().buildIndex - (10 * (10 * PlayerPrefs.GetInt("deadVal") + (int)LevelTimer.time * SceneManager.GetActiveScene().buildIndex));
+        res = 1000 * SceneManager.GetActiveScene().buildIndex - (( PlayerPrefs.GetInt("deadVal") + (int)LevelTimer.time * SceneManager.GetActiveScene().buildIndex));
         if (res < 0)
             res = 0;
 
