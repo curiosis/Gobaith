@@ -1593,6 +1593,10 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6248814403588135845, guid: efdbdedc6adcf114a99eda569fa43dd3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 6248814403588135851, guid: efdbdedc6adcf114a99eda569fa43dd3, type: 3}
       propertyPath: m_Name
       value: Spikes (3)
@@ -10201,6 +10205,10 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6248814403588135845, guid: efdbdedc6adcf114a99eda569fa43dd3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 6248814403588135851, guid: efdbdedc6adcf114a99eda569fa43dd3, type: 3}
       propertyPath: m_Name
       value: Spikes (4)
@@ -12219,6 +12227,10 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6248814403588135845, guid: efdbdedc6adcf114a99eda569fa43dd3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 6248814403588135851, guid: efdbdedc6adcf114a99eda569fa43dd3, type: 3}
       propertyPath: m_Name
       value: Spikes (2)
@@ -46127,6 +46139,10 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6248814403588135845, guid: efdbdedc6adcf114a99eda569fa43dd3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 6248814403588135851, guid: efdbdedc6adcf114a99eda569fa43dd3, type: 3}
       propertyPath: m_Name
       value: Spikes (1)
