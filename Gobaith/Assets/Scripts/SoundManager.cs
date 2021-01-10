@@ -5,7 +5,7 @@ using UnityEngine;
 public class SoundManager : MonoBehaviour
 {
 
-    public static AudioClip dead, tran, jump;
+    public static AudioClip dead, tran, jump, apple;
     public static AudioSource audioSource;
 
     void Start()
@@ -14,6 +14,7 @@ public class SoundManager : MonoBehaviour
         dead = Resources.Load<AudioClip>("DeadEffect");
         tran = Resources.Load<AudioClip>("transitionSoundEffect");
         jump = Resources.Load<AudioClip>("JumpSoundEffect");
+        apple = Resources.Load<AudioClip>("appleSound");
     }
 
     public static void PlaySound(string clip)
@@ -28,6 +29,9 @@ public class SoundManager : MonoBehaviour
                 break;
             case "TranEffect":
                 audioSource.PlayOneShot(tran);
+                break;
+            case "Apple":
+                audioSource.PlayOneShot(apple);
                 break;
 
         }
