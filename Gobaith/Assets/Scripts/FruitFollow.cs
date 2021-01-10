@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -15,8 +16,12 @@ public class FruitFollow : MonoBehaviour
 
     void Update()
     {
-        if(trig)
-            if (Vector2.Distance(transform.position, player.position) > distance)
-                transform.position = Vector2.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
+        if(player != null)
+        {
+            if (trig)
+                if (Vector2.Distance(transform.position, player.position) > distance)
+                    transform.position = Vector2.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
+        }
+            
     }
 }

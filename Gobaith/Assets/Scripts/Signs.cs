@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -14,7 +15,13 @@ public class Signs : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float distance = Vector2.Distance(transform.position, player.position);
+        float distance = 2f;
+        try
+        {
+            distance = Vector2.Distance(transform.position, player.position);
+        }
+        catch (Exception e) { }
+        
         PopUpSystem pop = GameObject.FindGameObjectWithTag("LevelManager").GetComponent<PopUpSystem>();
         if (distance < agroRange)
         {
@@ -24,7 +31,7 @@ public class Signs : MonoBehaviour
                 pop.PopUp(popUpText);
             }
         }
-        else
+        else if(distance == agroRange)
         {
             pop.closePopUP();
             closePopUpInfo();

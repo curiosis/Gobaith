@@ -31,8 +31,6 @@ public class Score : MonoBehaviour
 
         if(PlayerPrefs.GetInt("apple")>0)
             res += 100 * SceneManager.GetActiveScene().buildIndex;
-        Debug.Log(res);
         count = false;
-        Debug.Log(count);
     }
 }
