@@ -19,24 +19,23 @@ public class Signs : MonoBehaviour
         try
         {
             distance = Vector2.Distance(transform.position, player.position);
-        }
-        catch (Exception e) { }
-        
-        PopUpSystem pop = GameObject.FindGameObjectWithTag("LevelManager").GetComponent<PopUpSystem>();
-        if (distance < agroRange)
-        {
-            PopUpInfo();
-            if (Input.GetKeyDown(KeyCode.Space))
+            PopUpSystem pop = GameObject.FindGameObjectWithTag("LevelManager").GetComponent<PopUpSystem>();
+            if (distance < agroRange)
             {
-                pop.PopUp(popUpText);
+                PopUpInfo();
+                if (Input.GetKeyDown(KeyCode.Space))
+                {
+                    pop.PopUp(popUpText);
+                }
+            }
+            else if (distance == agroRange)
+            {
+                pop.closePopUP();
+                closePopUpInfo();
             }
         }
-        else if(distance == agroRange)
-        {
-            pop.closePopUP();
-            closePopUpInfo();
-        }
         
+        catch (Exception) { }
 
     }
 
