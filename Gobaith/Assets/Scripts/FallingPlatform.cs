@@ -5,7 +5,7 @@ using UnityEngine;
 public class FallingPlatform : MonoBehaviour
 {
     Rigidbody2D rb;
-    public float time, destroyTime;
+    public float fallingTime, destroyTime;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -15,7 +15,7 @@ public class FallingPlatform : MonoBehaviour
     {
         if(collision.gameObject.tag == "Player")
         {
-            Invoke("DropPlatform", time);
+            Invoke("DropPlatform", fallingTime);
             Destroy(gameObject, destroyTime);
         }
     }
