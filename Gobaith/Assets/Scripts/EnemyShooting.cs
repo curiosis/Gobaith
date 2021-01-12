@@ -5,9 +5,10 @@ using UnityEngine;
 public class EnemyShooting : MonoBehaviour
 {
     public Transform bulletPoint;
-    public GameObject bulletGO;
+    public GameObject bulletGO, bulletSandSlimeGO;
     private float timeBtwShots;
     public float startTimeBtwShots;
+    public bool sandSlime;
 
     void Start()
     {
@@ -19,7 +20,10 @@ public class EnemyShooting : MonoBehaviour
     {
         if (timeBtwShots <= 0)
         {
-            Instantiate(bulletGO, bulletPoint.position, bulletPoint.rotation);
+            if(!sandSlime)
+                Instantiate(bulletGO, bulletPoint.position, Quaternion.identity);
+            else if(sandSlime)
+                Instantiate(bulletSandSlimeGO, bulletPoint.position, Quaternion.identity);
             timeBtwShots = startTimeBtwShots;
         }
         else

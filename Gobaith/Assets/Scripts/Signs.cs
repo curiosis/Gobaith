@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -14,22 +15,27 @@ public class Signs : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float distance = Vector2.Distance(transform.position, player.position);
-        PopUpSystem pop = GameObject.FindGameObjectWithTag("LevelManager").GetComponent<PopUpSystem>();
-        if (distance < agroRange)
+        float distance = 2f;
+        try
         {
-            PopUpInfo();
-            if (Input.GetKeyDown(KeyCode.Space))
+            distance = Vector2.Distance(transform.position, player.position);
+            PopUpSystem pop = GameObject.FindGameObjectWithTag("LevelManager").GetComponent<PopUpSystem>();
+            if (distance < agroRange)
             {
-                pop.PopUp(popUpText);
+                PopUpInfo();
+                if (Input.GetKeyDown(KeyCode.Space))
+                {
+                    pop.PopUp(popUpText);
+                }
+            }
+            else if (distance == agroRange)
+            {
+                pop.closePopUP();
+                closePopUpInfo();
             }
         }
-        else
-        {
-            pop.closePopUP();
-            closePopUpInfo();
-        }
         
+        catch (Exception) { }
 
     }
 

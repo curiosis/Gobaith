@@ -8,7 +8,6 @@ public class TitleScreenManager : MonoBehaviour
     public string
         startGame,
         about,
-        credits,
         test;
 
     public string[] levelList;
@@ -24,17 +23,25 @@ public class TitleScreenManager : MonoBehaviour
 
     public void ShowChapters()
     {
-        if (chapterList.activeSelf == false)
-            chapterList.SetActive(true);
+        if (!Chapter1.showChapters && !Chapter2.showChapters2)
+        {
+            Chapter1.OpenCh1();
+            Chapter2.OpenCh2();
+        }
+            
         else
-            chapterList.SetActive(false);
+        {
+            Chapter1.CloseCh1();
+            Chapter2.CloseCh2();
+        }
+            
     }
 
-    public void Chapter1(){
+    public void Chapters1(){
         SceneManager.LoadScene(levelList[0]);
     }
 
-    public void Chapter2(){
+    public void Chapters2(){
         SceneManager.LoadScene(levelList[1]);
     }
 
@@ -47,6 +54,5 @@ public class TitleScreenManager : MonoBehaviour
     {
         Application.Quit();
     }
-
 
 }

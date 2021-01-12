@@ -15,7 +15,6 @@ public class UIManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(LevelLoader.nextLevel);
 
         if (LevelLoader.nextLevel)
         {

@@ -8,7 +8,7 @@ public class PlayerMovement : MonoBehaviour
     public string nextLevel;
     public float speed, jumpForce, checkRadius;
     private float moveInput;
-    private bool isGrounded, facingRight = true, movement, isSanded;
+    private bool isGrounded, facingRight = true, movement, isSanded, fruitBool;
     public Transform groundCheck;
     public LayerMask whatIsGround, sand;
     public Animator animator;
@@ -22,6 +22,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Start()
     {
+        fruitBool = false;
         deadValue.text = PlayerPrefs.GetInt("deadVal").ToString();
         deadValueAll.text = PlayerPrefs.GetInt("deadValAll").ToString();
         movement = true;
@@ -109,6 +110,9 @@ public class PlayerMovement : MonoBehaviour
 
         if (collision.CompareTag("fruit"))
         {
+            if(!fruitBool)
+                SoundManager.PlaySound("Apple");
+            fruitBool = true;
             int a = PlayerPrefs.GetInt("apple");
             a++;
             PlayerPrefs.SetInt("apple", a);
