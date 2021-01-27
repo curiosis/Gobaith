@@ -28,7 +28,7 @@ public class Signs : MonoBehaviour
                     pop.PopUp(popUpText);
                 }
             }
-            else if (distance == agroRange)
+            else
             {
                 pop.closePopUP();
                 closePopUpInfo();
