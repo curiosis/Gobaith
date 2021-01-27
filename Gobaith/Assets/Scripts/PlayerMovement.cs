@@ -44,7 +44,7 @@ public class PlayerMovement : MonoBehaviour
             if (isSanded)
             {
                 rb.gravityScale = 0.2f;
-                rb.velocity = new Vector2(moveInput * speed/15, rb.velocity.y);
+                rb.velocity = new Vector2(moveInput * speed/8, rb.velocity.y);
             }
             else
             {
