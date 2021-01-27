@@ -14,5 +14,10 @@ public class LevelManager : MonoBehaviour
             SceneManager.LoadScene(restartLevel);
             FruitFollow.trig = false;
         }
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            LevelTimer.time = 0;
+            SceneManager.LoadScene("TitleScreen");
+        }
     }
 }
