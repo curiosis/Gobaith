@@ -22,6 +22,5 @@ public class FruitFollow : MonoBehaviour
                 if (Vector2.Distance(transform.position, player.position) > distance)
                     transform.position = Vector2.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
         }
-            
     }
 }

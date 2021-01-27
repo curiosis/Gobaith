@@ -52,6 +52,7 @@ public class LevelLoader : MonoBehaviour
         yield return new WaitForSeconds(transitionTime);
         if (Input.GetKeyDown(KeyCode.Space))
         {
+            FruitFollow.trig = false;
             animator.SetTrigger("End");
             PlayerPrefs.SetInt("deadVal", 0);
             PlayerPrefs.SetInt("apple", 0);
