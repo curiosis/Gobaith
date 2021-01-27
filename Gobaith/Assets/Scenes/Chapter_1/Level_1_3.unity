@@ -1274,7 +1274,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 29681013}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 15.9, y: 27.7, z: -10}
+  m_LocalPosition: {x: -1.5, y: 3.3, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -7037,7 +7037,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2584566460515264949, guid: 0326473bbf6bb4541a6da034ca16b129, type: 3}
       propertyPath: speed
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 2584566460515264951, guid: 0326473bbf6bb4541a6da034ca16b129, type: 3}
       propertyPath: m_SortingOrder
@@ -20297,17 +20297,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b9a3f7fc7e912d488c4be766d8a1299, type: 3}
---- !u!114 &617557646 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3050756474538072972, guid: 7964ca6eaf081074e85c691d19838904, type: 3}
-  m_PrefabInstance: {fileID: 309333099}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &618878790 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7426205689147366476, guid: bfb740751b291ec418890f72ac02683d, type: 3}
@@ -25042,7 +25031,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2584566460515264949, guid: 0326473bbf6bb4541a6da034ca16b129, type: 3}
       propertyPath: speed
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 2584566460515264951, guid: 0326473bbf6bb4541a6da034ca16b129, type: 3}
       propertyPath: m_SortingOrder
@@ -30566,7 +30555,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 917172509}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 15.9, y: 27.7, z: -10}
+  m_LocalPosition: {x: -1.5, y: 3.3, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1452305576}
@@ -30745,7 +30734,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2584566460515264949, guid: 0326473bbf6bb4541a6da034ca16b129, type: 3}
       propertyPath: speed
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 2584566460515264951, guid: 0326473bbf6bb4541a6da034ca16b129, type: 3}
       propertyPath: m_SortingOrder
@@ -30903,7 +30892,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2584566460515264949, guid: 0326473bbf6bb4541a6da034ca16b129, type: 3}
       propertyPath: speed
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 2584566460515264951, guid: 0326473bbf6bb4541a6da034ca16b129, type: 3}
       propertyPath: m_SortingOrder
@@ -48900,7 +48889,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2584566460515264949, guid: 0326473bbf6bb4541a6da034ca16b129, type: 3}
       propertyPath: speed
-      value: 8
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 2584566460515264951, guid: 0326473bbf6bb4541a6da034ca16b129, type: 3}
       propertyPath: m_SortingOrder
@@ -49481,11 +49470,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4917487037692710853, guid: 86dd914b4b6d6fe4fbda72be8d6865c8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 15.9
+      value: -1.5
       objectReference: {fileID: 0}
     - target: {fileID: 4917487037692710853, guid: 86dd914b4b6d6fe4fbda72be8d6865c8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 27.7
+      value: 3.3
       objectReference: {fileID: 0}
     - target: {fileID: 4917487037692710853, guid: 86dd914b4b6d6fe4fbda72be8d6865c8, type: 3}
       propertyPath: m_LocalPosition.z
@@ -62122,7 +62111,7 @@ PrefabInstance:
     - target: {fileID: -3157461726707199701, guid: 3d98c1c8c130bd647ac7e960db3d18e6, type: 3}
       propertyPath: popUpText
       value: 
-      objectReference: {fileID: 617557646}
+      objectReference: {fileID: 0}
     - target: {fileID: -3157461726707199701, guid: 3d98c1c8c130bd647ac7e960db3d18e6, type: 3}
       propertyPath: popUpInfoGO
       value: 
