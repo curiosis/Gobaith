@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class TitleScreenManager : MonoBehaviour
@@ -11,13 +12,20 @@ public class TitleScreenManager : MonoBehaviour
         test;
 
     public string[] levelList;
-    public GameObject chapterList;
+    public Text scores;
+
+    private void Update()
+    {
+        scores.text = "Score: " + PlayerPrefs.GetInt("scoreAll");
+    }
 
     public void StartGame()
     {
         PlayerPrefs.SetInt("deadVal", 0);
+        PlayerPrefs.SetInt("deadValAll", 0);
         PlayerPrefs.SetInt("res", 0);
         PlayerPrefs.SetInt("apple", 0);
+        PlayerPrefs.SetInt("scoreAll",0);
         SceneManager.LoadScene(startGame);
     }
 
@@ -28,7 +36,7 @@ public class TitleScreenManager : MonoBehaviour
             Chapter1.OpenCh1();
             Chapter2.OpenCh2();
         }
-            
+
         else
         {
             Chapter1.CloseCh1();

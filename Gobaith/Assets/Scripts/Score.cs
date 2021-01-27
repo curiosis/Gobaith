@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class Score : MonoBehaviour
 {
     public static bool count = false;
-    public static int res;
+    public static int res, s;
 
     // Start is called before the first frame update
     void Start()
@@ -31,6 +31,9 @@ public class Score : MonoBehaviour
 
         if(PlayerPrefs.GetInt("apple")>0)
             res += 100 * SceneManager.GetActiveScene().buildIndex;
+        s = PlayerPrefs.GetInt("scoreAll");
+        s += res;
+        PlayerPrefs.SetInt("scoreAll", s);
         count = false;
     }
 }
