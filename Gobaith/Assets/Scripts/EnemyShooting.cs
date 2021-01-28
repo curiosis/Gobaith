@@ -4,14 +4,15 @@ using UnityEngine;
 
 public class EnemyShooting : MonoBehaviour
 {
-    public Transform bulletPoint;
-    public GameObject bulletGO, bulletSandSlimeGO;
+    public Transform bulletPoint, player;
+    public GameObject bulletGO, bulletunknown;
     private float timeBtwShots;
-    public float startTimeBtwShots;
-    public bool sandSlime;
+    public float startTimeBtwShots, distance, agroRange, speed;
+    public bool unknownEnemy;
 
     void Start()
     {
+        distance = Vector2.Distance(transform.position, player.position);
         timeBtwShots = startTimeBtwShots;
     }
 
@@ -20,14 +21,26 @@ public class EnemyShooting : MonoBehaviour
     {
         if (timeBtwShots <= 0)
         {
-            if(!sandSlime)
+            if(!unknownEnemy)
                 Instantiate(bulletGO, bulletPoint.position, Quaternion.identity);
-            else if(sandSlime)
-                Instantiate(bulletSandSlimeGO, bulletPoint.position, Quaternion.identity);
+            else if(unknownEnemy)
+                Instantiate(bulletunknown, bulletPoint.position, Quaternion.identity);
             timeBtwShots = startTimeBtwShots;
         }
         else
             timeBtwShots -= Time.deltaTime;
+
+        
+
+        if (player != null)
+        {
+            if (distance < agroRange)
+            {
+                if (Vector2.Distance(transform.position, player.position) < distance)
+                    transform.position = Vector2.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
+            }
+
+        }
     }
 
     public float getRot()
