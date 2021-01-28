@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/TitleScreen.unity
     guid: aa602d47f5dd3fb4dbde9d0d3b3b9bc6
   - enabled: 1
+    path: Assets/Scenes/Plot.unity
+    guid: 17812f4025e47b847afda7402d9c0853
+  - enabled: 1
     path: Assets/Scenes/Chapter_1/Level_1_1.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
@@ -24,6 +27,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Chapter_1/Level_1_5.unity
     guid: efd6d259ef392a847a57ea304e7ba8b6
   - enabled: 1
+    path: Assets/Scenes/Plot2.unity
+    guid: 8dc3cf54afa5b1546939d0e0ba4063ae
+  - enabled: 1
     path: Assets/Scenes/Chapter_2/Level_2_1.unity
     guid: 1c379f7a11ef9d847816195d01b648c9
   - enabled: 1
@@ -32,6 +38,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Chapter_2/Level_2_3.unity
     guid: 31aaeafcdd0333d4f8773cac67d747c7
+  - enabled: 1
+    path: Assets/Scenes/Chapter_2/Level_2_4.unity
+    guid: 15ba20655fac15f49b4c8c26854ac826
+  - enabled: 1
+    path: Assets/Scenes/Chapter_2/Level_2_5.unity
+    guid: 91afd20478947194a831b5f711624e2f
+  - enabled: 1
+    path: Assets/Scenes/Plot3.unity
+    guid: d967d5666cef8ec4ea427d446012cca5
   - enabled: 1
     path: Assets/Scenes/Tests.unity
     guid: f9b76566cb396fb4fb05aa9fe679f536
