@@ -9,7 +9,7 @@ public class DialogManager : MonoBehaviour
     public TextMeshProUGUI textDisplay;
     public TextMeshProUGUI text;
     public string[] sentences;
-    private int index;
+    public int index = 0;
     public AudioClip[] audioClips;
     public AudioSource audioSource;
     public float speed, sleep;
@@ -17,8 +17,8 @@ public class DialogManager : MonoBehaviour
 
     void Start()
     {
-        Sleep();
-        
+        index = 0;
+        text.text = "Continue";
         StartCoroutine(Type());
     }
 
@@ -43,11 +43,5 @@ public class DialogManager : MonoBehaviour
         }
         else
             SceneManager.LoadScene(nextLevel);
-    }
-
-    IEnumerator Sleep()
-    {
-        text.text = "Continue";
-        yield return new WaitForSeconds(sleep);
     }
 }

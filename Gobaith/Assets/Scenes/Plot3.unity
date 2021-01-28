@@ -490,19 +490,102 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &680535625
-MonoBehaviour:
+--- !u!82 &680535625
+AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 680535624}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c96d49ef45d2cfe45b774a4fec6e1442, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  restartLevel: Tests
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!114 &680535626
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -535,9 +618,28 @@ MonoBehaviour:
   - And you, the player?
   - Do you know the importance of feelings?
   - 'I hope. '
-  audioClips: []
-  audioSource: {fileID: 0}
+  index: 0
+  audioClips:
+  - {fileID: 8300000, guid: aa9239b4dfcea2842a51ec12cebc915e, type: 3}
+  - {fileID: 8300000, guid: 6dff956e3a4ba5c4ebaf5060f8b76e78, type: 3}
+  - {fileID: 8300000, guid: 530056edd4a023846afee24f866e5f75, type: 3}
+  - {fileID: 8300000, guid: cebcf3bfe7a726849ab1becee5522340, type: 3}
+  - {fileID: 8300000, guid: f3f32fe55adc3c7428315769ca673c8d, type: 3}
+  - {fileID: 8300000, guid: 11ad521232adea942b624cdffebbcdc2, type: 3}
+  - {fileID: 8300000, guid: 9111316c503ff2c43a8c1241758c33f7, type: 3}
+  - {fileID: 8300000, guid: da1361f52760f904291efcacadb6a18f, type: 3}
+  - {fileID: 8300000, guid: 583f262f031706b41ab026adc65701eb, type: 3}
+  - {fileID: 8300000, guid: 07c342b5f5f136e4086c06d78576af85, type: 3}
+  - {fileID: 8300000, guid: 2f0b9fea3f700004f9e3502798ea2e5b, type: 3}
+  - {fileID: 8300000, guid: 8793ae40556f85c408b145fc0639d0fe, type: 3}
+  - {fileID: 8300000, guid: 2411a67ed37cace4b9bd4600d6eb8456, type: 3}
+  - {fileID: 8300000, guid: b0644b51b17758541b67e6806be2687b, type: 3}
+  - {fileID: 8300000, guid: 6a395f100aac81248a2814cb92e22bc7, type: 3}
+  - {fileID: 8300000, guid: 4fa5f683048460b4db9be8f9470dd2eb, type: 3}
+  - {fileID: 8300000, guid: bd4cf039ab9d96a4c8d23cdf5b23b042, type: 3}
+  audioSource: {fileID: 680535625}
   speed: 0.08
+  sleep: 0
   nextLevel: Level_1_1
 --- !u!4 &680535627
 Transform:
