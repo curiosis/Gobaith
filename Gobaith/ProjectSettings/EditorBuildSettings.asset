@@ -48,6 +48,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Plot3.unity
     guid: d967d5666cef8ec4ea427d446012cca5
   - enabled: 1
+    path: Assets/Scenes/Intro.unity
+    guid: 2b7d0d90a368d9d499a77a3e5e4cce50
+  - enabled: 1
     path: Assets/Scenes/Tests.unity
     guid: f9b76566cb396fb4fb05aa9fe679f536
   m_configObjects: {}
