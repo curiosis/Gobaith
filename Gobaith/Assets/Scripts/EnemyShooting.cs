@@ -19,10 +19,6 @@ public class EnemyShooting : MonoBehaviour
     
     void Update()
     {
-       
-
-        
-
         if (player != null)
         {
             distance = Vector2.Distance(transform.position, player.position);

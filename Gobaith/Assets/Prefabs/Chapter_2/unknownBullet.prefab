@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1474602527759875296}
   - component: {fileID: -4682532107310914176}
   m_Layer: 0
-  m_Name: bulletSand
+  m_Name: unknownBullet
   m_TagString: spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -72,7 +72,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 25
   m_Sprite: {fileID: 6078696927127352129, guid: a5e14f077f698b849a7a8a08fe837afc, type: 3}
   m_Color: {r: 0.09433961, g: 0.08728321, b: 0.077874675, a: 1}
   m_FlipX: 0
