@@ -8,8 +8,9 @@ public class TitleScreenManager : MonoBehaviour
 {
     public string
         startGame,
-        about,
         test;
+	
+	public GameObject about;
 
     public string[] levelList;
     public Text scores;
@@ -62,5 +63,13 @@ public class TitleScreenManager : MonoBehaviour
     {
         Application.Quit();
     }
+	
+	public void About()
+	{
+		if (about.activeSelf == true)
+			about.SetActive(false);
+		else
+			about.SetActive(true);
+	}
 
 }
