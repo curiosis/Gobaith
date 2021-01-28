@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class DialogManager : MonoBehaviour
@@ -9,6 +10,7 @@ public class DialogManager : MonoBehaviour
     public string[] sentences;
     private int index;
     public float speed;
+    public string nextLevel;
 
     void Start()
     {
@@ -33,6 +35,6 @@ public class DialogManager : MonoBehaviour
             StartCoroutine(Type());
         }
         else
-            textDisplay.text = "";
+            SceneManager.LoadScene(nextLevel);
     }
 }

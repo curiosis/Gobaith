@@ -9917,6 +9917,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3050756474383436329, guid: 7964ca6eaf081074e85c691d19838904, type: 3}
+      propertyPath: m_Color.b
+      value: 0.32156864
+      objectReference: {fileID: 0}
+    - target: {fileID: 3050756474383436329, guid: 7964ca6eaf081074e85c691d19838904, type: 3}
+      propertyPath: m_Color.g
+      value: 0.32156864
+      objectReference: {fileID: 0}
+    - target: {fileID: 3050756474383436329, guid: 7964ca6eaf081074e85c691d19838904, type: 3}
+      propertyPath: m_Color.r
+      value: 0.32156864
+      objectReference: {fileID: 0}
     - target: {fileID: 3050756474458746562, guid: 7964ca6eaf081074e85c691d19838904, type: 3}
       propertyPath: m_Name
       value: PopUpSystem
@@ -10012,6 +10024,34 @@ PrefabInstance:
     - target: {fileID: 3050756475231418377, guid: 7964ca6eaf081074e85c691d19838904, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: closePopUP
+      objectReference: {fileID: 0}
+    - target: {fileID: 3050756475231418382, guid: 7964ca6eaf081074e85c691d19838904, type: 3}
+      propertyPath: m_Color.b
+      value: 0.32156864
+      objectReference: {fileID: 0}
+    - target: {fileID: 3050756475231418382, guid: 7964ca6eaf081074e85c691d19838904, type: 3}
+      propertyPath: m_Color.g
+      value: 0.32156864
+      objectReference: {fileID: 0}
+    - target: {fileID: 3050756475231418382, guid: 7964ca6eaf081074e85c691d19838904, type: 3}
+      propertyPath: m_Color.r
+      value: 0.32156864
+      objectReference: {fileID: 0}
+    - target: {fileID: 3050756475476755133, guid: 7964ca6eaf081074e85c691d19838904, type: 3}
+      propertyPath: m_Color.b
+      value: 0.3207547
+      objectReference: {fileID: 0}
+    - target: {fileID: 3050756475476755133, guid: 7964ca6eaf081074e85c691d19838904, type: 3}
+      propertyPath: m_Color.g
+      value: 0.3207547
+      objectReference: {fileID: 0}
+    - target: {fileID: 3050756475476755133, guid: 7964ca6eaf081074e85c691d19838904, type: 3}
+      propertyPath: m_Color.r
+      value: 0.3207547
+      objectReference: {fileID: 0}
+    - target: {fileID: 3050756475476755134, guid: 7964ca6eaf081074e85c691d19838904, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7964ca6eaf081074e85c691d19838904, type: 3}
@@ -55890,6 +55930,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fd4d91da9e0c29e49b7294e27ed076e9, type: 3}
+--- !u!114 &1709293292 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3050756474538072972, guid: 7964ca6eaf081074e85c691d19838904, type: 3}
+  m_PrefabInstance: {fileID: 309333099}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1709338976
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -62111,7 +62162,7 @@ PrefabInstance:
     - target: {fileID: -3157461726707199701, guid: 3d98c1c8c130bd647ac7e960db3d18e6, type: 3}
       propertyPath: popUpText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1709293292}
     - target: {fileID: -3157461726707199701, guid: 3d98c1c8c130bd647ac7e960db3d18e6, type: 3}
       propertyPath: popUpInfoGO
       value: 
