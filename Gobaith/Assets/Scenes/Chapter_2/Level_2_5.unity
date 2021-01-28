@@ -26564,7 +26564,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3053364874455225814, guid: 3d98c1c8c130bd647ac7e960db3d18e6, type: 3}
       propertyPath: restartLevel
-      value: Level_2_2
+      value: Level_2_5
       objectReference: {fileID: 0}
     - target: {fileID: 3053364874455225815, guid: 3d98c1c8c130bd647ac7e960db3d18e6, type: 3}
       propertyPath: m_RootOrder
