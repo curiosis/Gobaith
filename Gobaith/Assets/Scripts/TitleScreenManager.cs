@@ -27,6 +27,7 @@ public class TitleScreenManager : MonoBehaviour
         PlayerPrefs.SetInt("res", 0);
         PlayerPrefs.SetInt("apple", 0);
         PlayerPrefs.SetInt("scoreAll",0);
+        Chapter2.enableCh2 = false;
         SceneManager.LoadScene(startGame);
     }
 
