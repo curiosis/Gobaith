@@ -15,11 +15,11 @@ public class GameManager : MonoBehaviour
         levelNames[2] = "Pedestal";
         levelNames[3] = "Mountain of revelation";
         levelNames[4] = "Cave de Bélly";
-	levelNames[5] = "Tany efitra";
-	levelNames[6] = "Lohasahan'i Misty";
-	levelNames[7] = "Grotta tar-ramel";
-	levelNames[8] = "Havoana rahona";
-	levelNames[9] = "Tany manidina";
+	    levelNames[5] = "Tany efitra";
+	    levelNames[6] = "Lohasahan'i Misty";
+	    levelNames[7] = "Grotta tar-ramel";
+	    levelNames[8] = "Havoana rahona";
+	    levelNames[9] = "Tany manidina";
 
         apples[0] = 1;
     }

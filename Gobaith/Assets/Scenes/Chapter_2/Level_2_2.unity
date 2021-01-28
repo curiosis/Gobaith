@@ -15694,8 +15694,8 @@ PrefabInstance:
       objectReference: {fileID: 679224872}
     - target: {fileID: 5344218857556825800, guid: e3ba8ca3e017eef4cb25184e80acf873, type: 3}
       propertyPath: popUpText
-      value: 'This desert has already buried many people. There is a legend that
-        a cactus grows on the remains of every daredevil who ventures here ... '
+      value: 'There is eternal fog in this valley. Apparently, it has to do with
+        quick sands. Many people died at their bottom. '
       objectReference: {fileID: 0}
     - target: {fileID: 5344218857556825801, guid: e3ba8ca3e017eef4cb25184e80acf873, type: 3}
       propertyPath: m_Name
@@ -15707,11 +15707,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5344218857556825802, guid: e3ba8ca3e017eef4cb25184e80acf873, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -205.8
+      value: -206.11
       objectReference: {fileID: 0}
     - target: {fileID: 5344218857556825802, guid: e3ba8ca3e017eef4cb25184e80acf873, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -8.7
+      value: -7.66
       objectReference: {fileID: 0}
     - target: {fileID: 5344218857556825802, guid: e3ba8ca3e017eef4cb25184e80acf873, type: 3}
       propertyPath: m_LocalPosition.z
@@ -15747,15 +15747,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5344218857556825803, guid: e3ba8ca3e017eef4cb25184e80acf873, type: 3}
       propertyPath: m_Color.b
-      value: 0.21471167
+      value: 0.5660378
       objectReference: {fileID: 0}
     - target: {fileID: 5344218857556825803, guid: e3ba8ca3e017eef4cb25184e80acf873, type: 3}
       propertyPath: m_Color.g
-      value: 0.21471167
+      value: 0.5660378
       objectReference: {fileID: 0}
     - target: {fileID: 5344218857556825803, guid: e3ba8ca3e017eef4cb25184e80acf873, type: 3}
       propertyPath: m_Color.r
-      value: 0.23584908
+      value: 0.5660378
       objectReference: {fileID: 0}
     - target: {fileID: 5344218857556825803, guid: e3ba8ca3e017eef4cb25184e80acf873, type: 3}
       propertyPath: m_SortingOrder
