@@ -11361,8 +11361,8 @@ PrefabInstance:
       objectReference: {fileID: 1840293712}
     - target: {fileID: 5344218857556825800, guid: e3ba8ca3e017eef4cb25184e80acf873, type: 3}
       propertyPath: popUpText
-      value: 'This desert has already buried many people. There is a legend that
-        a cactus grows on the remains of every daredevil who ventures here ... '
+      value: 'You are so high that the land itself is in the air. Is it heaven? Or
+        maybe hell ... '
       objectReference: {fileID: 0}
     - target: {fileID: 5344218857556825800, guid: e3ba8ca3e017eef4cb25184e80acf873, type: 3}
       propertyPath: popUpInfoGO
@@ -11378,11 +11378,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5344218857556825802, guid: e3ba8ca3e017eef4cb25184e80acf873, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 372.2
+      value: -34.06
       objectReference: {fileID: 0}
     - target: {fileID: 5344218857556825802, guid: e3ba8ca3e017eef4cb25184e80acf873, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 12.8
+      value: -12.12
       objectReference: {fileID: 0}
     - target: {fileID: 5344218857556825802, guid: e3ba8ca3e017eef4cb25184e80acf873, type: 3}
       propertyPath: m_LocalPosition.z
@@ -11418,19 +11418,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5344218857556825803, guid: e3ba8ca3e017eef4cb25184e80acf873, type: 3}
       propertyPath: m_Color.b
-      value: 0.21471167
+      value: 0.53012633
       objectReference: {fileID: 0}
     - target: {fileID: 5344218857556825803, guid: e3ba8ca3e017eef4cb25184e80acf873, type: 3}
       propertyPath: m_Color.g
-      value: 0.21471167
+      value: 0.53651035
       objectReference: {fileID: 0}
     - target: {fileID: 5344218857556825803, guid: e3ba8ca3e017eef4cb25184e80acf873, type: 3}
       propertyPath: m_Color.r
-      value: 0.23584908
+      value: 0.5377358
       objectReference: {fileID: 0}
     - target: {fileID: 5344218857556825803, guid: e3ba8ca3e017eef4cb25184e80acf873, type: 3}
       propertyPath: m_SortingOrder
-      value: 24
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e3ba8ca3e017eef4cb25184e80acf873, type: 3}
@@ -12819,7 +12819,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 342001217}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 373.14, y: 17.01, z: -10}
+  m_LocalPosition: {x: -40.9, y: -10.57, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -55395,7 +55395,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1680069957}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 373.14, y: 17.01, z: -10}
+  m_LocalPosition: {x: -40.9, y: -10.57, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 937738020}
@@ -70787,11 +70787,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4917487037692710853, guid: 86dd914b4b6d6fe4fbda72be8d6865c8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 373.14
+      value: -40.9
       objectReference: {fileID: 0}
     - target: {fileID: 4917487037692710853, guid: 86dd914b4b6d6fe4fbda72be8d6865c8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 17.01
+      value: -10.57
       objectReference: {fileID: 0}
     - target: {fileID: 4917487037692710853, guid: 86dd914b4b6d6fe4fbda72be8d6865c8, type: 3}
       propertyPath: m_LocalPosition.z
