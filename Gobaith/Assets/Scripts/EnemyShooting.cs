@@ -6,8 +6,8 @@ public class EnemyShooting : MonoBehaviour
 {
     public Transform bulletPoint, player;
     public GameObject bulletGO, bulletunknown;
-    private float timeBtwShots;
-    public float startTimeBtwShots, distance, agroRange, speed;
+    private float timeBtwShots, distance;
+    public float startTimeBtwShots, agroRange, speed;
     public bool unknownEnemy;
 
     void Start()
