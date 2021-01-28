@@ -11285,6 +11285,10 @@ PrefabInstance:
       propertyPath: popUpText
       value: 
       objectReference: {fileID: 1837799866}
+    - target: {fileID: -3157461726707199701, guid: 3d98c1c8c130bd647ac7e960db3d18e6, type: 3}
+      propertyPath: popUpInfoGO
+      value: 
+      objectReference: {fileID: 1476496960}
     - target: {fileID: 3053364874455225813, guid: 3d98c1c8c130bd647ac7e960db3d18e6, type: 3}
       propertyPath: m_Name
       value: LevelManager
@@ -40427,6 +40431,11 @@ Transform:
 Transform:
   m_CorrespondingSourceObject: {fileID: 1857508607002668462, guid: cbaa600d9495b6547a340ba015b5900c, type: 3}
   m_PrefabInstance: {fileID: 1853553939}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1476496960 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5344218855708940852, guid: e3ba8ca3e017eef4cb25184e80acf873, type: 3}
+  m_PrefabInstance: {fileID: 1409439942}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1479372479
 GameObject:
