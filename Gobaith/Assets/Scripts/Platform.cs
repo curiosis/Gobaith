@@ -13,7 +13,6 @@ public class Platform : MonoBehaviour
         nextPosition = startPosition.position;
     }
 
-    
     void Update()
     {
         if(transform.position == position1.position)

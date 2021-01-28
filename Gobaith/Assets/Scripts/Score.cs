@@ -8,12 +8,6 @@ public class Score : MonoBehaviour
     public static bool count = false;
     public static int res, s;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     // Update is called once per frame
     void Update()
     {

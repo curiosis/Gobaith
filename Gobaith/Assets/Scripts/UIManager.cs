@@ -7,12 +7,6 @@ public class UIManager : MonoBehaviour
 {
     public Text time, dead, deadAll;
 
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
     void Update()
     {
 

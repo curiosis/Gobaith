@@ -20,6 +20,4 @@ public class PopUpSystem : MonoBehaviour
     {
         animator.SetBool("Pop", false);
     }
-
-
 }

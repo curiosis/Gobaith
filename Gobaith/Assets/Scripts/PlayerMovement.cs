@@ -36,7 +36,6 @@ public class PlayerMovement : MonoBehaviour
             isGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, whatIsGround);
             isSanded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, sand);
             moveInput = Input.GetAxis("Horizontal");
-            
 
             if ((facingRight == false && moveInput > 0) || (facingRight == true && moveInput < 0))
                 Flip();
@@ -51,7 +50,6 @@ public class PlayerMovement : MonoBehaviour
                 rb.gravityScale = 4;
                 rb.velocity = new Vector2(moveInput * speed, rb.velocity.y);
             }
-                
         }
     }
 
@@ -70,7 +68,6 @@ public class PlayerMovement : MonoBehaviour
                     SoundManager.PlaySound("Jump");
                     rb.velocity = Vector2.up * jumpForce/10;
                 }
-                
             }
 
         if (!LevelLoader.nextLevel)
@@ -86,7 +83,6 @@ public class PlayerMovement : MonoBehaviour
                 
         
     }
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("spike"))
@@ -118,7 +114,6 @@ public class PlayerMovement : MonoBehaviour
             PlayerPrefs.SetInt("apple", a);
             FruitFollow.trig = true;
         }
-            
 
         if (collision.CompareTag("tp"))
         {
@@ -129,9 +124,6 @@ public class PlayerMovement : MonoBehaviour
             
             LevelLoader.nextLevel = true;
         }
-            
-
-
     }
 
     private void OnCollisionEnter2D(Collision2D other)

@@ -34,9 +34,7 @@ public class Signs : MonoBehaviour
                 closePopUpInfo();
             }
         }
-        
         catch (Exception) { }
-
     }
 
     public void PopUpInfo()

@@ -13,10 +13,6 @@ public class Chapter1 : MonoBehaviour
         showChapters = false;
     }
 
-    void Update()
-    {
-    }
-
     public static void OpenCh1()
     {
         animator.SetBool("OpenChMM", true);

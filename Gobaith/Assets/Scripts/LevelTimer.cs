@@ -9,11 +9,6 @@ public class LevelTimer : MonoBehaviour
     public Text timeText;
     public static bool timing = true;
 
-    void Start()
-    {
-        
-    }
-
     // Update is called once per frame
     void Update()
     {

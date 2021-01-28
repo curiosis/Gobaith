@@ -19,7 +19,6 @@ public class TitleScreenManager : MonoBehaviour
     {
         scores.text = "Score: " + PlayerPrefs.GetInt("scoreAll");
     }
-
     public void StartGame()
     {
         PlayerPrefs.SetInt("deadVal", 0);
@@ -38,13 +37,11 @@ public class TitleScreenManager : MonoBehaviour
             Chapter1.OpenCh1();
             Chapter2.OpenCh2();
         }
-
         else
         {
             Chapter1.CloseCh1();
             Chapter2.CloseCh2();
         }
-            
     }
 
     public void Chapters1(){
@@ -72,5 +69,4 @@ public class TitleScreenManager : MonoBehaviour
 		else
 			about.SetActive(true);
 	}
-
 }

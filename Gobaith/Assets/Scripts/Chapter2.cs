@@ -13,11 +13,6 @@ public class Chapter2 : MonoBehaviour
         showChapters2 = false;
     }
 
-    void Update()
-    {
-
-    }
-
     public static void OpenCh2()
     {
         if (enableCh2)
