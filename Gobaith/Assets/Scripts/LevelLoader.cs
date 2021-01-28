@@ -59,8 +59,8 @@ public class LevelLoader : MonoBehaviour
             LevelTimer.time = 0;
             LevelTimer.timing = true;
             nextLevel = false;
-            if (levelIndex == 6)
-                PlayerPrefs.SetInt("Ch2", 1);
+            if (levelIndex > 5)
+                Chapter2.enableCh2 = true;
             SceneManager.LoadScene(levelIndex);
             
         }

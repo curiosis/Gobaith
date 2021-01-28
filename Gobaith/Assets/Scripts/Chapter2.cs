@@ -5,7 +5,7 @@ using UnityEngine;
 public class Chapter2 : MonoBehaviour
 {
     public static Animator animator;
-    public static bool showChapters2;
+    public static bool showChapters2, enableCh2;
 
     void Start()
     {
@@ -15,12 +15,16 @@ public class Chapter2 : MonoBehaviour
 
     void Update()
     {
+
     }
 
     public static void OpenCh2()
     {
-        animator.SetBool("openChMM", true);
-        showChapters2 = true;
+        if (enableCh2)
+        {
+            animator.SetBool("openChMM", true);
+            showChapters2 = true;
+        }
     }
 
     public static void CloseCh2()
