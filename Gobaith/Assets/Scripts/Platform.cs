@@ -15,9 +15,9 @@ public class Platform : MonoBehaviour
 
     void Update()
     {
-        if(transform.position == position1.position)
+        if (transform.position == position1.position)
             nextPosition = position2.position;
-        else if(transform.position == position2.position)
+        else if (transform.position == position2.position)
             nextPosition = position1.position;
 
         transform.position = Vector3.MoveTowards(transform.position, nextPosition, speed * Time.deltaTime);
