@@ -59,4 +59,12 @@ public class EnemyShooting : MonoBehaviour
 
         }
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("PlayerBullet"))
+        {
+            Debug.Log("Hahaha");
+        }
+    }
 }

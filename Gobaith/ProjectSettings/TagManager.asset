@@ -10,6 +10,7 @@ TagManager:
   - tp
   - turnEnemy
   - LevelManager
+  - PlayerBullet
   layers:
   - Default
   - TransparentFX
