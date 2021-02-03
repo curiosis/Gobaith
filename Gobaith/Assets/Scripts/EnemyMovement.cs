@@ -32,14 +32,13 @@ public class EnemyMovement : MonoBehaviour
         if(player != null)
         {
             float distance = Vector2.Distance(transform.position, player.position);
-            Debug.Log(agroRange / distance);
             try
             {
                 if (distance < agroRange)
                 {
                     if (timeBtwShots <= 0)
                     {
-                        SoundManager.PlaySound("SlimeMovement", agroRange / distance);
+                        SoundManager.PlaySound("SlimeMovement", Math.Abs(1-(distance/agroRange)));
                         timeBtwShots = startTimeBtwShots;
                     }
                     else

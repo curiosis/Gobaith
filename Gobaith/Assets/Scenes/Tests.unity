@@ -28174,7 +28174,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7326627428411166134, guid: 120b3f981a98e7d4ba83511b1780602b, type: 3}
       propertyPath: startTimeBtwShots
-      value: 2
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 7326627428411166136, guid: 120b3f981a98e7d4ba83511b1780602b, type: 3}
       propertyPath: m_RootOrder
