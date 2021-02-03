@@ -9,8 +9,8 @@ public class TitleScreenManager : MonoBehaviour
     public string
         startGame,
         test;
-	
-	public GameObject about;
+
+    public GameObject about;
 
     public string[] levelList;
     public Text scores;
@@ -25,7 +25,7 @@ public class TitleScreenManager : MonoBehaviour
         PlayerPrefs.SetInt("deadValAll", 0);
         PlayerPrefs.SetInt("res", 0);
         PlayerPrefs.SetInt("apple", 0);
-        PlayerPrefs.SetInt("scoreAll",0);
+        PlayerPrefs.SetInt("scoreAll", 0);
         Chapter2.enableCh2 = false;
         SceneManager.LoadScene(startGame);
     }
@@ -44,11 +44,13 @@ public class TitleScreenManager : MonoBehaviour
         }
     }
 
-    public void Chapters1(){
+    public void Chapters1()
+    {
         SceneManager.LoadScene(levelList[0]);
     }
 
-    public void Chapters2(){
+    public void Chapters2()
+    {
         SceneManager.LoadScene(levelList[1]);
     }
 
@@ -61,12 +63,12 @@ public class TitleScreenManager : MonoBehaviour
     {
         Application.Quit();
     }
-	
-	public void About()
-	{
-		if (about.activeSelf == true)
-			about.SetActive(false);
-		else
-			about.SetActive(true);
-	}
+
+    public void About()
+    {
+        if (about.activeSelf == true)
+            about.SetActive(false);
+        else
+            about.SetActive(true);
+    }
 }

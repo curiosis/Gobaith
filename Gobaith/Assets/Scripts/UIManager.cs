@@ -16,7 +16,7 @@ public class UIManager : MonoBehaviour
             dead.text = "";
             deadAll.text = "";
         }
-        if(!LevelLoader.nextLevel)
+        if (!LevelLoader.nextLevel)
         {
             time.text = "Time: ";
             dead.text = "Deaths: ";

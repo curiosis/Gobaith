@@ -20,11 +20,11 @@ public class GameManager : MonoBehaviour
 
         levelNames[6] = "";
 
-	    levelNames[7] = "Tany efitra";
-	    levelNames[8] = "Lohasahan'i Misty";
-	    levelNames[9] = "Grotta tar-ramel";
-	    levelNames[10] = "Havoana rahona";
-	    levelNames[11] = "Tany manidina";
+        levelNames[7] = "Tany efitra";
+        levelNames[8] = "Lohasahan'i Misty";
+        levelNames[9] = "Grotta tar-ramel";
+        levelNames[10] = "Havoana rahona";
+        levelNames[11] = "Tany manidina";
 
         levelNames[12] = "";
 
