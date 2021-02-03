@@ -12,11 +12,9 @@ public class EnemyShooting : MonoBehaviour
 
     void Start()
     {
-        
         timeBtwShots = startTimeBtwShots;
     }
 
-    
     void Update()
     {
         if (player != null)
@@ -36,7 +34,6 @@ public class EnemyShooting : MonoBehaviour
                     timeBtwShots -= Time.deltaTime;
 
                 transform.position = Vector2.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
-                
 
                 Vector3 dir = player.position - transform.position;
                 float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
