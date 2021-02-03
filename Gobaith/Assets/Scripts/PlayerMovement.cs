@@ -72,19 +72,19 @@ public class PlayerMovement : MonoBehaviour
                     rb.velocity = Vector2.up * jumpForce / 10;
                 else
                     rb.velocity = Vector2.up * jumpForce;
-                SoundManager.PlaySound("Jump");
+                SoundManager.PlaySound("Jump",0);
                 jumpsValue--;
             }
             else if ((Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow)) && jumpsValue == 0)
             {
                 if (isGrounded)
                 {
-                    SoundManager.PlaySound("Jump");
+                    SoundManager.PlaySound("Jump",0);
                     rb.velocity = Vector2.up * jumpForce;
                 }
                 else if (isSanded)
                 {
-                    SoundManager.PlaySound("Jump");
+                    SoundManager.PlaySound("Jump",0);
                     rb.velocity = Vector2.up * jumpForce / 10;
                 }
             }
@@ -120,13 +120,13 @@ public class PlayerMovement : MonoBehaviour
 
 
             Destroy(player);
-            SoundManager.PlaySound("Dead");
+            SoundManager.PlaySound("Dead",0);
         }
 
         if (collision.CompareTag("fruit"))
         {
             if (!fruitBool)
-                SoundManager.PlaySound("Apple");
+                SoundManager.PlaySound("Apple",0);
             fruitBool = true;
             int a = PlayerPrefs.GetInt("apple");
             a++;

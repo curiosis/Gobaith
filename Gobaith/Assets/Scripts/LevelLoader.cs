@@ -36,7 +36,7 @@ public class LevelLoader : MonoBehaviour
 
         float t = LevelTimer.time;
         animator.SetTrigger("Start");
-        SoundManager.PlaySound("TranEffect");
+        SoundManager.PlaySound("TranEffect",0);
 
         level.text = GameManager.levelNames[SceneManager.GetActiveScene().buildIndex - 1];
         points.text = Score.res.ToString();
