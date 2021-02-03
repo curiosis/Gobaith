@@ -11537,7 +11537,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26e8dd174a8fa0f41910878d67328d07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  atackParticleSystem: {fileID: 249201818709620646, guid: c52712902481c8d478210516b5ce5d96, type: 3}
+  atackParticleSystem: {fileID: 1020111442511882401, guid: 6f408485b42085847bf5f204203b1f47, type: 3}
+  damageRange: 10
 --- !u!1 &939659795
 GameObject:
   m_ObjectHideFlags: 0
@@ -18305,6 +18306,10 @@ PrefabInstance:
     - target: {fileID: 1077789421627853565, guid: a1b36d3fbe526914198ec8c778bd1923, type: 3}
       propertyPath: m_Name
       value: Monster_02
+      objectReference: {fileID: 0}
+    - target: {fileID: 1077789421627853565, guid: a1b36d3fbe526914198ec8c778bd1923, type: 3}
+      propertyPath: m_TagString
+      value: Wizard
       objectReference: {fileID: 0}
     - target: {fileID: 1077789421627853567, guid: a1b36d3fbe526914198ec8c778bd1923, type: 3}
       propertyPath: m_RootOrder

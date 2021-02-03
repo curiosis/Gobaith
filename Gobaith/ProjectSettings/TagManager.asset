@@ -11,6 +11,7 @@ TagManager:
   - turnEnemy
   - LevelManager
   - PlayerBullet
+  - Wizard
   layers:
   - Default
   - TransparentFX
