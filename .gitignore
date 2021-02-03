@@ -54,7 +54,7 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
-*.shader
+Gobaith/Assets/TextMesh%20Pro/Shaders/*.shader
 
 # Crashlytics generated file
 crashlytics-build.properties
