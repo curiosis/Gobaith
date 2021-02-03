@@ -28105,12 +28105,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7094640417684237970, guid: fcf0df8a116b1454499c04df3c95b41c, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7094640417684237972, guid: fcf0df8a116b1454499c04df3c95b41c, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7094640417684237973, guid: fcf0df8a116b1454499c04df3c95b41c, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 6303722635946273138}
+    - target: {fileID: 7094640417684237973, guid: fcf0df8a116b1454499c04df3c95b41c, type: 3}
+      propertyPath: startTimeBtwShots
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7094640417684237973, guid: fcf0df8a116b1454499c04df3c95b41c, type: 3}
+      propertyPath: startTimeBtwSound
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7094640417684237974, guid: fcf0df8a116b1454499c04df3c95b41c, type: 3}
       propertyPath: m_RootOrder
       value: 36
@@ -28223,6 +28235,10 @@ PrefabInstance:
     - target: {fileID: 7326627428411166138, guid: 120b3f981a98e7d4ba83511b1780602b, type: 3}
       propertyPath: m_Name
       value: Monster_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 7326627428411166138, guid: 120b3f981a98e7d4ba83511b1780602b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 120b3f981a98e7d4ba83511b1780602b, type: 3}

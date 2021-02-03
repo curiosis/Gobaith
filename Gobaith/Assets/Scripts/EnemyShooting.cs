@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,28 +7,39 @@ public class EnemyShooting : MonoBehaviour
 {
     public Transform bulletPoint, player;
     public GameObject bulletGO, bulletunknown;
-    private float timeBtwShots, distance;
-    public float startTimeBtwShots, agroRange, speed;
+    private float timeBtwShots, timeBtwSound, distance;
+    public float startTimeBtwShots, startTimeBtwSound, agroRange, speed;
     public bool unknownEnemy;
 
     void Start()
     {
         timeBtwShots = startTimeBtwShots;
+        timeBtwSound = startTimeBtwSound;
     }
 
     void Update()
     {
         if (player != null)
         {
+            Debug.Log(timeBtwShots);
             distance = Vector2.Distance(transform.position, player.position);
             if (distance < agroRange)
             {
+                if (timeBtwSound <= 0)
+                {
+                    SoundManager.PlaySound("UnknownMovement", Math.Abs(1 - (distance / agroRange)));
+                    timeBtwSound = startTimeBtwSound;
+                }
+                else
+                    timeBtwSound -= Time.deltaTime;
+
                 if (timeBtwShots <= 0)
                 {
                     if (!unknownEnemy)
                         Instantiate(bulletGO, bulletPoint.position, Quaternion.identity);
                     else if (unknownEnemy)
                         Instantiate(bulletunknown, bulletPoint.position, Quaternion.identity);
+
                     timeBtwShots = startTimeBtwShots;
                 }
                 else

@@ -3,17 +3,17 @@ using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour
 {
-    public float speed, agroRange, startTimeBtwShots;
+    public float speed, agroRange, startTimeBtwSound;
     public bool facingRight;
     float xValue;
     public Transform player;
 
-    private float timeBtwShots;
+    private float timeBtwSound;
 
     private void Start()
     {
         xValue = transform.localScale.x;
-        timeBtwShots = startTimeBtwShots;
+        timeBtwSound = startTimeBtwSound;
     }
 
     void Update()
@@ -36,14 +36,14 @@ public class EnemyMovement : MonoBehaviour
             {
                 if (distance < agroRange)
                 {
-                    if (timeBtwShots <= 0)
+                    if (timeBtwSound <= 0)
                     {
                         SoundManager.PlaySound("SlimeMovement", Math.Abs(1-(distance/agroRange)));
-                        timeBtwShots = startTimeBtwShots;
+                        timeBtwSound = startTimeBtwSound;
                     }
                     else
                     {
-                        timeBtwShots -= Time.deltaTime;
+                        timeBtwSound -= Time.deltaTime;
                     }
                 }
             }
