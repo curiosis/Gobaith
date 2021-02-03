@@ -21,9 +21,32 @@ public class EnemyShooting : MonoBehaviour
     {
         if (player != null)
         {
-            Debug.Log(timeBtwShots);
             distance = Vector2.Distance(transform.position, player.position);
             if (distance < agroRange)
+            {
+                if (timeBtwShots <= 0)
+                {
+                    if (!unknownEnemy)
+                        Instantiate(bulletGO, bulletPoint.position, Quaternion.identity);
+                    else if (unknownEnemy)
+                    {
+                        Instantiate(bulletunknown, bulletPoint.position, Quaternion.identity);
+                        SoundManager.PlaySound("UnknownShot", 0);
+                    }
+                        
+
+                    timeBtwShots = startTimeBtwShots;
+                }
+                else
+                    timeBtwShots -= Time.deltaTime;
+
+                transform.position = Vector2.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
+                Vector3 dir = player.position - transform.position;
+                float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+                transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+            }
+
+            if (distance < agroRange * 2)
             {
                 if (timeBtwSound <= 0)
                 {
@@ -32,24 +55,6 @@ public class EnemyShooting : MonoBehaviour
                 }
                 else
                     timeBtwSound -= Time.deltaTime;
-
-                if (timeBtwShots <= 0)
-                {
-                    if (!unknownEnemy)
-                        Instantiate(bulletGO, bulletPoint.position, Quaternion.identity);
-                    else if (unknownEnemy)
-                        Instantiate(bulletunknown, bulletPoint.position, Quaternion.identity);
-
-                    timeBtwShots = startTimeBtwShots;
-                }
-                else
-                    timeBtwShots -= Time.deltaTime;
-
-                transform.position = Vector2.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
-
-                Vector3 dir = player.position - transform.position;
-                float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
-                transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
             }
 
         }

@@ -5,7 +5,7 @@ using UnityEngine;
 public class SoundManager : MonoBehaviour
 {
 
-    public static AudioClip dead, tran, jump, apple, slimeMovement, unknownMovement;
+    public static AudioClip dead, tran, jump, apple, slimeMovement, unknownMovement, unknownShot;
     public static AudioSource audioSource;
 
     void Start()
@@ -17,6 +17,7 @@ public class SoundManager : MonoBehaviour
         apple = Resources.Load<AudioClip>("appleSound");
         slimeMovement = Resources.Load<AudioClip>("slime_movement");
         unknownMovement = Resources.Load<AudioClip>("unknown_movement");
+        unknownShot = Resources.Load<AudioClip>("unknown_shot");
     }
 
     public static void PlaySound(string clip, float distance)
@@ -43,6 +44,9 @@ public class SoundManager : MonoBehaviour
             case "UnknownMovement":
                 audioSource.volume = distance;
                 audioSource.PlayOneShot(unknownMovement);
+                break;
+            case "UnknownShot":
+                audioSource.PlayOneShot(unknownShot);
                 break;
 
         }

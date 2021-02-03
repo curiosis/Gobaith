@@ -27619,6 +27619,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 434172157}
     - target: {fileID: 4917487037692710858, guid: 86dd914b4b6d6fe4fbda72be8d6865c8, type: 3}
+      propertyPath: extraJumps
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4917487037692710858, guid: 86dd914b4b6d6fe4fbda72be8d6865c8, type: 3}
       propertyPath: sand.m_Bits
       value: 512
       objectReference: {fileID: 0}
@@ -28117,7 +28121,7 @@ PrefabInstance:
       objectReference: {fileID: 6303722635946273138}
     - target: {fileID: 7094640417684237973, guid: fcf0df8a116b1454499c04df3c95b41c, type: 3}
       propertyPath: startTimeBtwShots
-      value: 3
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 7094640417684237973, guid: fcf0df8a116b1454499c04df3c95b41c, type: 3}
       propertyPath: startTimeBtwSound
