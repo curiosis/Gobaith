@@ -15,10 +15,9 @@ public class Signs : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float distance = 2f;
         try
         {
-            distance = Vector2.Distance(transform.position, player.position);
+            float distance = Vector2.Distance(transform.position, player.position);
             PopUpSystem pop = GameObject.FindGameObjectWithTag("LevelManager").GetComponent<PopUpSystem>();
             if (distance < agroRange)
             {
@@ -30,8 +29,8 @@ public class Signs : MonoBehaviour
             }
             else
             {
-                pop.closePopUP();
-                closePopUpInfo();
+                pop.ClosePopUP();
+                ClosePopUpInfo();
             }
         }
         catch (Exception) { }
@@ -43,7 +42,7 @@ public class Signs : MonoBehaviour
         animator.SetBool("Info", true);
     }
 
-    public void closePopUpInfo()
+    public void ClosePopUpInfo()
     {
         animator.SetBool("Info", false);
     }

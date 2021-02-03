@@ -16,7 +16,7 @@ public class PopUpSystem : MonoBehaviour
         animator.SetBool("Pop", true);
     }
 
-    public void closePopUP()
+    public void ClosePopUP()
     {
         animator.SetBool("Pop", false);
     }
