@@ -20,9 +20,13 @@ public class PlayerMovement : MonoBehaviour
 
     private Rigidbody2D rb;
 
+    private int jumpsValue;
+    public int extraJumps;
+
     private void Start()
     {
         fruitBool = false;
+        jumpsValue = extraJumps;
         deadValue.text = PlayerPrefs.GetInt("deadVal").ToString();
         deadValueAll.text = PlayerPrefs.GetInt("deadValAll").ToString();
         movement = true;
@@ -55,20 +59,34 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
+        Debug.Log(jumpsValue);
+        if (isGrounded || isSanded)
+        {
+            jumpsValue = extraJumps;
+        }
+
         if (movement)
-            if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
+        {
+            if ((Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow)) && jumpsValue > 0 && !isSanded)
+            {
+                    SoundManager.PlaySound("Jump");
+                    rb.velocity = Vector2.up * jumpForce;
+                    jumpsValue--;
+            }
+            else if ((Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow)) && jumpsValue == 0)
             {
                 if (isGrounded)
                 {
                     SoundManager.PlaySound("Jump");
                     rb.velocity = Vector2.up * jumpForce;
                 }
-                if (isSanded)
+                else if (isSanded)
                 {
                     SoundManager.PlaySound("Jump");
-                    rb.velocity = Vector2.up * jumpForce/10;
+                    rb.velocity = Vector2.up * jumpForce / 10;
                 }
             }
+        }
 
         if (!LevelLoader.nextLevel)
         {
@@ -80,9 +98,8 @@ public class PlayerMovement : MonoBehaviour
             deadValue.text = "";
             deadValueAll.text = "";
         }
-                
-        
     }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("spike"))
