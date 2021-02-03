@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour
@@ -20,7 +18,6 @@ public class EnemyMovement : MonoBehaviour
             transform.Translate(2 * Time.deltaTime * speed, 0, 0);
             transform.localScale = new Vector2(-xValue, xValue);
         }
-            
         else
         {
             transform.Translate(-2 * Time.deltaTime * speed, 0, 0);
