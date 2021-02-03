@@ -20,6 +20,27 @@ TextureImporter:
   - first:
       213: 3364305283643475909
     second: UnknownBoss_5
+  - first:
+      213: -8834132696038461245
+    second: UnknownBoss_0
+  - first:
+      213: 1059956160207361623
+    second: UnknownBoss_1
+  - first:
+      213: -2794326140819679835
+    second: UnknownBoss_2
+  - first:
+      213: -6506344703094391207
+    second: UnknownBoss_3
+  - first:
+      213: -8447288741334072432
+    second: UnknownBoss_4
+  - first:
+      213: -3643383560072439287
+    second: UnknownBoss_5
+  - first:
+      213: -4978387725977504987
+    second: UnknownBoss_6
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -117,14 +138,14 @@ TextureImporter:
         width: 460
         height: 460
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d141f28d2ec089300800000000000000
-      internalID: 258971147002909725
+      spriteID: 3c0b6f14e1bd66580800000000000000
+      internalID: -8834132696038461245
       vertices: []
       indices: 
       edges: []
@@ -135,17 +156,17 @@ TextureImporter:
         serializedVersion: 2
         x: 508
         y: 1126
-        width: 183
+        width: 184
         height: 184
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 92d56ac33c1b3ca30800000000000000
-      internalID: 4234423526752673065
+      spriteID: 75695a60388b5be00800000000000000
+      internalID: 1059956160207361623
       vertices: []
       indices: 
       edges: []
@@ -158,15 +179,15 @@ TextureImporter:
         y: 802
         width: 61
         height: 495
-      alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c29c27288cf7980f0800000000000000
-      internalID: -1114218933638739668
+      spriteID: 5a5dadd0e2f8839d0800000000000000
+      internalID: -2794326140819679835
       vertices: []
       indices: 
       edges: []
@@ -176,18 +197,18 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 938
-        y: 848
+        y: 847
         width: 460
         height: 460
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 35b944078002ab600800000000000000
-      internalID: 484735130511121235
+      spriteID: 95e70d1f6f1d4b5a0800000000000000
+      internalID: -6506344703094391207
       vertices: []
       indices: 
       edges: []
@@ -196,19 +217,19 @@ TextureImporter:
       name: UnknownBoss_4
       rect:
         serializedVersion: 2
-        x: 15
+        x: 14
         y: 515
         width: 467
         height: 261
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 806063b5d66ed6d70800000000000000
-      internalID: 9038133384558544392
+      spriteID: 09340a935a335ca80800000000000000
+      internalID: -8447288741334072432
       vertices: []
       indices: 
       edges: []
@@ -217,19 +238,40 @@ TextureImporter:
       name: UnknownBoss_5
       rect:
         serializedVersion: 2
-        x: 18
-        y: 280
-        width: 705
-        height: 87
+        x: 938
+        y: 341
+        width: 460
+        height: 460
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5c70a83a4d960be20800000000000000
-      internalID: 3364305283643475909
+      spriteID: 90a5261a4f9107dc0800000000000000
+      internalID: -3643383560072439287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnknownBoss_6
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 280
+        width: 705
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52332f66db639eab0800000000000000
+      internalID: -4978387725977504987
       vertices: []
       indices: 
       edges: []
