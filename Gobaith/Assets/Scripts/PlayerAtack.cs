@@ -5,20 +5,34 @@ using UnityEngine;
 public class PlayerAtack : MonoBehaviour
 {
     public GameObject atackParticleSystem;
-    public float damageRange;
+    public float damageRange, startTimeBtwShots;
     float distance;
+    float timeBtwShots;
+
+    private void Start()
+    {
+        timeBtwShots = startTimeBtwShots;
+    }
 
     void Update()
     {
         GameObject enemy = GameObject.FindGameObjectWithTag("Wizard");
 
         distance = Vector2.Distance(transform.position, enemy.transform.position);
-
-        if (Input.GetKeyDown(KeyCode.Q))
+        if (timeBtwShots <= 0)
         {
-            Instantiate(atackParticleSystem, transform.position, Quaternion.identity);
-            if (damageRange > distance)
-                Debug.Log("Frajer");
+            if (Input.GetKeyDown(KeyCode.Q))
+            {
+
+                Instantiate(atackParticleSystem, transform.position, Quaternion.identity);
+                SoundManager.PlaySound("PlayerAttack", 0);
+                if (damageRange > distance)
+                    Debug.Log("Frajer");
+                timeBtwShots = startTimeBtwShots;
+            }
         }
+        else
+            timeBtwShots -= Time.deltaTime;
+        
     }
 }
