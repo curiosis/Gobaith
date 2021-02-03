@@ -21210,7 +21210,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   distanceJoint: {fileID: 895855640}
-  mainCamera: {fileID: 616406759}
   lineRenderer: {fileID: 895855639}
   distance: 90
   layerMaskRope:

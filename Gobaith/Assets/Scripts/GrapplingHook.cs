@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class GrapplingHook : MonoBehaviour
 {
-    readonly DistanceJoint2D distanceJoint;
-    readonly LineRenderer lineRenderer;
+    public DistanceJoint2D distanceJoint;
+    public LineRenderer lineRenderer;
     Vector2 mousePos;
 
     public float distance;
@@ -13,9 +13,6 @@ public class GrapplingHook : MonoBehaviour
 
     void Start()
     {
-        distanceJoint.gameObject.GetComponent<DistanceJoint2D>();
-        lineRenderer.gameObject.GetComponent<LineRenderer>();
-
         lineRenderer.enabled = false;
         distanceJoint.enabled = false;
     }
