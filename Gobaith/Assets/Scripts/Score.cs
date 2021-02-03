@@ -19,11 +19,11 @@ public class Score : MonoBehaviour
 
     public void Counting()
     {
-        res = 1000 * SceneManager.GetActiveScene().buildIndex - (( PlayerPrefs.GetInt("deadVal") + (int)LevelTimer.time * SceneManager.GetActiveScene().buildIndex));
+        res = 1000 * SceneManager.GetActiveScene().buildIndex - ((PlayerPrefs.GetInt("deadVal") + (int)LevelTimer.time * SceneManager.GetActiveScene().buildIndex));
         if (res < 0)
             res = 0;
 
-        if(PlayerPrefs.GetInt("apple")>0)
+        if (PlayerPrefs.GetInt("apple") > 0)
             res += 100 * SceneManager.GetActiveScene().buildIndex;
         s = PlayerPrefs.GetInt("scoreAll");
         s += res;

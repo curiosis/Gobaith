@@ -41,10 +41,10 @@ public class LevelLoader : MonoBehaviour
         level.text = GameManager.levelNames[SceneManager.GetActiveScene().buildIndex - 1];
         points.text = Score.res.ToString();
         deathsVal.text = PlayerPrefs.GetInt("deadVal").ToString();
-        timer.text = t.ToString("0.0")+"s";
+        timer.text = t.ToString("0.0") + "s";
 
         if (PlayerPrefs.GetInt("apple") > 0)
-            extraPoints.text = "+"+(100 * SceneManager.GetActiveScene().buildIndex).ToString();
+            extraPoints.text = "+" + (100 * SceneManager.GetActiveScene().buildIndex).ToString();
         else
             extraPoints.text = "0";
 
@@ -62,7 +62,7 @@ public class LevelLoader : MonoBehaviour
             if (levelIndex > 6)
                 Chapter2.enableCh2 = true;
             SceneManager.LoadScene(levelIndex);
-            
+
         }
     }
 }

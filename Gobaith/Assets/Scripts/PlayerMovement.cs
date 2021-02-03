@@ -47,7 +47,7 @@ public class PlayerMovement : MonoBehaviour
             if (isSanded)
             {
                 rb.gravityScale = 0.2f;
-                rb.velocity = new Vector2(moveInput * speed/8, rb.velocity.y);
+                rb.velocity = new Vector2(moveInput * speed / 8, rb.velocity.y);
             }
             else
             {
@@ -68,8 +68,8 @@ public class PlayerMovement : MonoBehaviour
         {
             if ((Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow)) && jumpsValue > 0)
             {
-                if(isSanded)
-                    rb.velocity = Vector2.up * jumpForce/10;
+                if (isSanded)
+                    rb.velocity = Vector2.up * jumpForce / 10;
                 else
                     rb.velocity = Vector2.up * jumpForce;
                 SoundManager.PlaySound("Jump");
@@ -125,7 +125,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (collision.CompareTag("fruit"))
         {
-            if(!fruitBool)
+            if (!fruitBool)
                 SoundManager.PlaySound("Apple");
             fruitBool = true;
             int a = PlayerPrefs.GetInt("apple");
@@ -144,7 +144,8 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.gameObject.CompareTag("platform")){
+        if (other.gameObject.CompareTag("platform"))
+        {
             this.transform.parent = other.transform;
         }
     }
