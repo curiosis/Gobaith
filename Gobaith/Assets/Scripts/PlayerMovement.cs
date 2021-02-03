@@ -59,7 +59,6 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log(jumpsValue);
         if (isGrounded || isSanded)
         {
             jumpsValue = extraJumps;
@@ -67,11 +66,14 @@ public class PlayerMovement : MonoBehaviour
 
         if (movement)
         {
-            if ((Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow)) && jumpsValue > 0 && !isSanded)
+            if ((Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow)) && jumpsValue > 0)
             {
-                    SoundManager.PlaySound("Jump");
+                if(isSanded)
+                    rb.velocity = Vector2.up * jumpForce/10;
+                else
                     rb.velocity = Vector2.up * jumpForce;
-                    jumpsValue--;
+                SoundManager.PlaySound("Jump");
+                jumpsValue--;
             }
             else if ((Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow)) && jumpsValue == 0)
             {
@@ -135,10 +137,7 @@ public class PlayerMovement : MonoBehaviour
         if (collision.CompareTag("tp"))
         {
             movement = false;
-
             Score.count = true;
-
-            
             LevelLoader.nextLevel = true;
         }
     }
