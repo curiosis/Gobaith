@@ -25,7 +25,7 @@ public class DialogManager : MonoBehaviour
     IEnumerator Type()
     {
         audioSource.PlayOneShot(audioClips[index]);
-        foreach(char letter in sentences[index].ToCharArray())
+        foreach (char letter in sentences[index].ToCharArray())
         {
             textDisplay.text += letter;
             yield return new WaitForSeconds(speed);
@@ -38,7 +38,7 @@ public class DialogManager : MonoBehaviour
         {
             index++;
             textDisplay.text = "";
-            if (index == sentences.Length - 1 ) text.text = "GO";
+            if (index == sentences.Length - 1) text.text = "GO";
             StartCoroutine(Type());
         }
         else
