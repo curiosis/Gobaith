@@ -12,7 +12,7 @@ public class DialogManager : MonoBehaviour
     public int index = 0;
     public AudioClip[] audioClips;
     public AudioSource audioSource;
-    public float speed, sleep;
+    public float speed;
     public string nextLevel;
 
     void Start()
