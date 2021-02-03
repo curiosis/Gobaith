@@ -16,7 +16,7 @@ public class FruitFollow : MonoBehaviour
 
     void Update()
     {
-        if(player != null)
+        if (player != null)
         {
             if (trig)
                 if (Vector2.Distance(transform.position, player.position) > distance)
