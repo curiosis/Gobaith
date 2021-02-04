@@ -6,19 +6,23 @@ using TMPro;
 
 public class DialogManager : MonoBehaviour
 {
-    public TextMeshProUGUI textDisplay;
+    public TextMeshProUGUI textDisplay, whoTalking;
     public TextMeshProUGUI text;
     public string[] sentences;
     public int index = 0;
     public AudioClip[] audioClips;
     public AudioSource audioSource;
     public float speed;
-    public string nextLevel;
+    public string nextLevel, player, NPC;
+    public bool dialog;
+    public int[] chCallerIndexSentences;
+
 
     void Start()
     {
         index = 0;
         text.text = "Continue";
+        whoTalking.text = NPC;
         StartCoroutine(Type());
     }
 
@@ -36,6 +40,8 @@ public class DialogManager : MonoBehaviour
     {
         if (index < sentences.Length - 1)
         {
+            if (dialog)
+                ChangeCaller();
             index++;
             textDisplay.text = "";
             if (index == sentences.Length - 1) text.text = "GO";
@@ -43,5 +49,13 @@ public class DialogManager : MonoBehaviour
         }
         else
             SceneManager.LoadScene(nextLevel);
+    }
+
+    void ChangeCaller()
+    {
+        if (whoTalking.text == player)
+            whoTalking.text = NPC;
+        else
+            whoTalking.text = player;
     }
 }

@@ -6,10 +6,21 @@ public class Rotate : MonoBehaviour
 {
     public int speed;
     public bool rotate;
+    public bool rotateSoundEffect;
 
     void Update()
     {
-        if(rotate)
+        if (rotate)
+        {
             transform.Rotate(0, 0, speed * Time.deltaTime);
+        }
+
+        if (rotateSoundEffect)
+        {
+            SoundManager.PlaySound("UnknownBossRotate", 0);
+            rotateSoundEffect = false;
+        }
+            
+
     }
 }
