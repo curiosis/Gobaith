@@ -42,7 +42,6 @@ ExportedObj/
 *.mdb
 *.opendb
 *.VC.db
-*.shader
 
 # Unity3D generated meta files
 *.pidb.meta
@@ -55,7 +54,6 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
-Gobaith/Assets/TextMesh%20Pro/Shaders/*.shader
 
 # Crashlytics generated file
 crashlytics-build.properties
