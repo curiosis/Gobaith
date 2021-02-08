@@ -6766,7 +6766,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 57209e3d3a9a931479003c7817dc240a, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.151
+  m_Volume: 0.125
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -14133,6 +14133,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5979884268149453231, guid: 0f8c4eecebda4ac408871ebbce60dbce, type: 3}
+      propertyPath: m_Volume
+      value: 0.02
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0f8c4eecebda4ac408871ebbce60dbce, type: 3}
 --- !u!1 &1362223886
@@ -15144,10 +15148,64 @@ MonoBehaviour:
   sentences:
   - My darling children were right.
   - Who are you?
+  - I am the Great Ancient. And you, little creature, are destroying the order of
+    this world.
+  - Me? Why?
+  - You woke up my sleep guards.
+  - These creatures that look like you?
+  - Yes, they are my children. They and I arose thousands of years before the human
+    invasion.
+  - Where have the people gone?
+  - We managed to kill them. However, this beautiful land has become a desert.
+  - People have destroyed this land?
+  - Yes, and we did not have enough strength to accept the change.
+  - You said I woke your children from sleep.
+  - After those events, I decided that my children and I would kill anyone who entered
+    these areas.
+  - I'm still alive.
+  - And I am full of admiration. You avoided the guards' attack. Until you finally
+    got to me.
+  - Will you kill me?
+  - I'll put you to the test.
+  - Test?
+  - 'Yes. If you can escape from me, I will consider you worthy to be in my kingdom. '
+  - You are huge. I can't.
+  - Take it.
+  - What's that?
+  - During the human annihilation, I was able to find this device. Should help you.
+  - Where should I run?
+  - The chase will take place in the Cave of the Dead.
+  - How will I get there?
+  - Don't worry about that.
   index: 0
   audioClips:
-  - {fileID: 8300000, guid: e5021b81889afed4b87fb45f9d45e719, type: 3}
-  - {fileID: 8300000, guid: 69a3aafde192e7e4d86a6028d7b9a874, type: 3}
+  - {fileID: 8300000, guid: d1e23207136695e4a818fe018a8a69d7, type: 3}
+  - {fileID: 8300000, guid: f391e3cce0e578244b7eee2d9ebccf69, type: 3}
+  - {fileID: 8300000, guid: 76ad52411b041314c81d86ae4b7545e7, type: 3}
+  - {fileID: 8300000, guid: a36f5ad1118ffa1438327f8787fa0be5, type: 3}
+  - {fileID: 8300000, guid: be665d1568c090040a1a53978ddac160, type: 3}
+  - {fileID: 8300000, guid: d9564e9bb00f26c4bb1595a2aeed81e6, type: 3}
+  - {fileID: 8300000, guid: 4d138dc7b62b50940abcac43f852af85, type: 3}
+  - {fileID: 8300000, guid: cd60b5548a11b5547b58a1c44149125b, type: 3}
+  - {fileID: 8300000, guid: 96f834ef70ef47a479ee6f2474405c2e, type: 3}
+  - {fileID: 8300000, guid: d740d21c410e54f4aa729282a9b768f3, type: 3}
+  - {fileID: 8300000, guid: 4301475ff5d777b48938f8badbcf372e, type: 3}
+  - {fileID: 8300000, guid: 041cc62133e4c654fa324e98c0ed71e8, type: 3}
+  - {fileID: 8300000, guid: 607ae869b8d57d54bba08cb71fc4c6d2, type: 3}
+  - {fileID: 8300000, guid: c6473d4f2c1398a42a04fa6aa1c05ff0, type: 3}
+  - {fileID: 8300000, guid: 92cb73418c81efe46915c8293773a498, type: 3}
+  - {fileID: 8300000, guid: bc7421e0f85b8964782859f4f1a242e4, type: 3}
+  - {fileID: 8300000, guid: a8f537e399441934987034421cd982b2, type: 3}
+  - {fileID: 8300000, guid: deec7f31afee0534bbc4423b3f349eea, type: 3}
+  - {fileID: 8300000, guid: 31b97fa7380b75b45b199bd5f23d1ea7, type: 3}
+  - {fileID: 8300000, guid: af1fec50064960b4cba380f9b0f2764e, type: 3}
+  - {fileID: 8300000, guid: 0205f90399032754a896b5494f1d5d3d, type: 3}
+  - {fileID: 8300000, guid: 52439c41c10736b4897e22f44c4b5a45, type: 3}
+  - {fileID: 8300000, guid: 85ac18c971303ee44908202901fa40d0, type: 3}
+  - {fileID: 8300000, guid: e69595756f53898419d924c937cd9eb4, type: 3}
+  - {fileID: 8300000, guid: 8a19bfe6b83956d42b380988d6791dc4, type: 3}
+  - {fileID: 8300000, guid: dbdd07d7560f3404e8473a0e50fd6d0e, type: 3}
+  - {fileID: 8300000, guid: 9bc3c067b50856a409cedb03b81516ed, type: 3}
   audioSource: {fileID: 1567867859}
   speed: 0.04
   nextLevel: 
