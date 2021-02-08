@@ -13877,9 +13877,9 @@ LineRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: 632086361
+  m_SortingLayer: 1
+  m_SortingOrder: 99
   m_Positions:
   - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 1}
@@ -13913,14 +13913,14 @@ LineRenderer:
     colorGradient:
       serializedVersion: 2
       key0: {r: 0, g: 0, b: 0, a: 1}
-      key1: {r: 0.058779202, g: 0.16981131, b: 0.053666778, a: 0.58431375}
+      key1: {r: 0.6603774, g: 0.5880276, b: 0.28969383, a: 0.58431375}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
       key5: {r: 0, g: 0, b: 0, a: 0}
       key6: {r: 0, g: 0, b: 0, a: 0}
       key7: {r: 0, g: 0, b: 0, a: 0}
-      ctime0: 0
+      ctime0: 17348
       ctime1: 54934
       ctime2: 0
       ctime3: 0
@@ -31849,7 +31849,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1697797557815502883, guid: f60ff7055dd49c04fae4bc0f606338d3, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1697797557815502885, guid: f60ff7055dd49c04fae4bc0f606338d3, type: 3}
       propertyPath: m_RootOrder
