@@ -12632,7 +12632,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 1
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 40.651833, y: 169.42093, z: 53.910934, w: 195.07857}
+  m_margin: {x: 40.651833, y: -44.179123, z: 53.910934, w: -42.285904}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -12662,8 +12662,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -910.386, y: -750}
-  m_SizeDelta: {x: 1527.0208, y: 236.0227}
+  m_AnchoredPosition: {x: -910.386, y: -892.72546}
+  m_SizeDelta: {x: 79.3044, y: -1.853}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!1 &820525594
 GameObject:
@@ -15142,14 +15142,14 @@ MonoBehaviour:
   whoTalking: {fileID: 735504386}
   text: {fileID: 792866650}
   sentences:
-  - Hello. Jestem twoja matka i rucham ci starego.
-  - No siema.
+  - My darling children were right.
+  - Who are you?
   index: 0
   audioClips:
-  - {fileID: 8300000, guid: 69a3aafde192e7e4d86a6028d7b9a874, type: 3}
+  - {fileID: 8300000, guid: e5021b81889afed4b87fb45f9d45e719, type: 3}
   - {fileID: 8300000, guid: 69a3aafde192e7e4d86a6028d7b9a874, type: 3}
   audioSource: {fileID: 1567867859}
-  speed: 0.1
+  speed: 0.04
   nextLevel: 
   player: Creature
   NPC: UnknownBoss
