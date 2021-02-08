@@ -1393,6 +1393,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 180
   rotate: 0
+  rotateSoundEffect: 0
 --- !u!4 &334324259
 Transform:
   m_ObjectHideFlags: 0
@@ -6999,6 +7000,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 360
   rotate: 0
+  rotateSoundEffect: 0
 --- !u!96 &580696452
 TrailRenderer:
   serializedVersion: 2
@@ -12616,6 +12618,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 360
   rotate: 0
+  rotateSoundEffect: 0
 --- !u!96 &850917202
 TrailRenderer:
   serializedVersion: 2
@@ -12821,6 +12824,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 360
   rotate: 0
+  rotateSoundEffect: 0
 --- !u!96 &874693675
 TrailRenderer:
   serializedVersion: 2
@@ -13104,6 +13108,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: -360
   rotate: 0
+  rotateSoundEffect: 0
 --- !u!1 &895855632 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4917487037692710849, guid: 86dd914b4b6d6fe4fbda72be8d6865c8, type: 3}
@@ -18395,6 +18400,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 181842035}
+  whoTalking: {fileID: 0}
   text: {fileID: 0}
   sentences:
   - Test 1
@@ -18404,6 +18410,11 @@ MonoBehaviour:
   audioSource: {fileID: 0}
   speed: 0.02
   nextLevel: 
+  player: 
+  NPC: 
+  actualDialog: 
+  dialog: 0
+  chCallerIndexSentences: 
 --- !u!114 &1052098033
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18683,7 +18694,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &1269348078
 SpriteRenderer:
   m_ObjectHideFlags: 0
