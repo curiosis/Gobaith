@@ -17,7 +17,7 @@ public class Rotate : MonoBehaviour
 
         if (rotateSoundEffect)
         {
-            SoundManager.PlaySound("UnknownBossRotate", 0);
+            SoundManager.PlaySound("UnknownBossRotate", 0.005f);
             rotateSoundEffect = false;
         }
             

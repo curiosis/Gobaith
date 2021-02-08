@@ -13,7 +13,7 @@ public class DialogManager : MonoBehaviour
     public AudioClip[] audioClips;
     public AudioSource audioSource;
     public float speed;
-    public string nextLevel, player, NPC;
+    public string nextLevel, player, NPC, actualDialog;
     public bool dialog;
     public int[] chCallerIndexSentences;
 
@@ -42,6 +42,12 @@ public class DialogManager : MonoBehaviour
         {
             if (dialog)
                 ChangeCaller();
+            if (actualDialog == "CutScene_2_5" && index == 20)
+            {
+                SoundManager.PlaySound("SpawnGrapplingHook", 0.005f);
+                SpawnGrapplinghook.spawn = true;
+            }
+                
             index++;
             textDisplay.text = "";
             if (index == sentences.Length - 1) text.text = "GO";
