@@ -17,8 +17,8 @@ public class PlayerAtack : MonoBehaviour
     void Update()
     {
         GameObject enemy = GameObject.FindGameObjectWithTag("Wizard");
-
-        distance = Vector2.Distance(transform.position, enemy.transform.position);
+        if(enemy != null)
+            distance = Vector2.Distance(transform.position, enemy.transform.position);
         if (timeBtwShots <= 0)
         {
             if (Input.GetKeyDown(KeyCode.Q))
