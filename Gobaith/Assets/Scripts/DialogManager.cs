@@ -44,7 +44,7 @@ public class DialogManager : MonoBehaviour
                 ChangeCaller();
             if (actualDialog == "CutScene_2_5" && index == 20)
             {
-                SoundManager.PlaySound("SpawnGrapplingHook", 0.005f);
+                SoundManager.PlaySound("SpawnGrapplingHook", 0.0005f);
                 SpawnGrapplinghook.spawn = true;
             }
                 
